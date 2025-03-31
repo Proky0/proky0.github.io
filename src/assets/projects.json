@@ -1,0 +1,165 @@
+[
+  {
+    "id": 1,
+    "name": "Neon City RP",
+    "description": "Un serveur Roleplay futuriste dans une ville néon, inspiré par Cyberpunk 2077. Plongez dans un monde où les choix façonnent votre destin.",
+    "github": "https://github.com/yourusername/neon-city-rp",
+    "tebex": "https://yourstore.tebex.io",
+    "video": {
+      "active": true,
+      "url": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    },
+    "duration": {
+      "start": "2023-01-01",
+      "end": "2023-12-31"
+    },
+    "technologies": [
+      {
+        "name": "Lua",
+        "icon": "fab fa-js"
+      },
+      {
+        "name": "Vue.js",
+        "icon": "fab fa-vuejs"
+      },
+      {
+        "name": "Tailwind CSS",
+        "icon": "fab fa-css3-alt"
+      }
+    ],
+    "images": ["https://picsum.photos/1920/1080", "https://picsum.photos/1280/720", "https://picsum.photos/1600/900"]
+  },
+  {
+    "id": 2,
+    "name": "Vaporwave Heist",
+    "description": "Un serveur de braquages avec une esthétique années 80 et une bande-son synthwave. Planifiez des braquages épiques et devenez un légende du crime.",
+    "github": "https://github.com/yourusername/vaporwave-heist",
+    "cover": "https://picsum.photos/1920/1080",
+    "images": ["https://picsum.photos/1920/1080", "https://picsum.photos/1280/720"],
+    "duration": {
+      "start": "2023-03-15",
+      "end": "2023-09-30"
+    },
+    "technologies": [
+      {
+        "name": "Lua",
+        "icon": "fab fa-js"
+      },
+      {
+        "name": "Node.js",
+        "icon": "fab fa-node-js"
+      },
+      {
+        "name": "MySQL",
+        "icon": "fas fa-database"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "E-Corp Life",
+    "description": "Un serveur Roleplay d'entreprise inspiré par Mr. Robot. Hackez, espionnez et grimpez les échelons pour dominer le monde des affaires.",
+    "cover": "https://picsum.photos/1920/1080",
+    "images": [
+      "https://picsum.photos/1920/1080",
+      "https://picsum.photos/1280/720",
+      "https://picsum.photos/1600/900",
+      "https://picsum.photos/1440/900"
+    ],
+    "duration": {
+      "start": "2023-05-01",
+      "end": "2023-11-30"
+    },
+    "technologies": [
+      {
+        "name": "Lua",
+        "icon": "fab fa-js"
+      },
+      {
+        "name": "React",
+        "icon": "fab fa-react"
+      },
+      {
+        "name": "PostgreSQL",
+        "icon": "fas fa-database"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Wild West Adventures",
+    "description": "Un serveur Roleplay dans l'Ouest sauvage. Devenez un cowboy, un hors-la-loi ou un shérif et vivez des aventures pleines de dangers.",
+    "github": "https://github.com/yourusername/wild-west-adventures",
+    "cover": "https://picsum.photos/1920/1080",
+    "images": ["https://picsum.photos/1920/1080"],
+    "duration": {
+      "start": "2023-02-01",
+      "end": "2023-08-31"
+    },
+    "technologies": [
+      {
+        "name": "Lua",
+        "icon": "fab fa-js"
+      },
+      {
+        "name": "Vue.js",
+        "icon": "fab fa-vuejs"
+      },
+      {
+        "name": "MySQL",
+        "icon": "fas fa-database"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Space Odyssey",
+    "description": "Explorez l'univers dans ce serveur Roleplay spatial. Construisez des vaisseaux, colonisez des planètes et survivez aux dangers de l'espace.",
+    "cover": "https://picsum.photos/1920/1080",
+    "images": ["https://picsum.photos/1920/1080", "https://picsum.photos/1280/720"],
+    "duration": {
+      "start": "2023-04-01",
+      "end": "2023-10-31"
+    },
+    "technologies": [
+      {
+        "name": "Lua",
+        "icon": "fab fa-js"
+      },
+      {
+        "name": "React",
+        "icon": "fab fa-react"
+      },
+      {
+        "name": "PostgreSQL",
+        "icon": "fas fa-database"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Medieval Kingdom",
+    "description": "Un serveur Roleplay médiéval où vous pouvez devenir un chevalier, un paysan ou un roi. Construisez votre royaume et défendez-le contre les envahisseurs.",
+    "github": "https://github.com/yourusername/medieval-kingdom",
+    "cover": "https://picsum.photos/1920/1080",
+    "images": ["https://picsum.photos/1920/1080", "https://picsum.photos/1280/720", "https://picsum.photos/1600/900"],
+    "duration": {
+      "start": "2023-06-01",
+      "end": "2023-12-31"
+    },
+    "technologies": [
+      {
+        "name": "Lua",
+        "icon": "fab fa-js"
+      },
+      {
+        "name": "Node.js",
+        "icon": "fab fa-node-js"
+      },
+      {
+        "name": "MySQL",
+        "icon": "fas fa-database"
+      }
+    ]
+  }
+]

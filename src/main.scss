@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Press+Start+2P&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Couleurs pour le mode jour
+$light-background: #fafafa;
+$light-text: #333333;
+$light-border: #e0e0e0;
+$light-accent-blue: #6c63ff;
+$light-accent-green: #4caf50;
+$light-accent-pink: #ff6f61;
+
+// Couleurs pour le mode nuit
+$dark-background: #1a1a1a;
+$dark-text: #cccccc;
+$dark-border: #2e2e2e;
+$dark-accent-blue: #6c63ff;
+$dark-accent-pink: #ff6f61;
+
+// Tailles et espacements
+$spacing-unit: 1rem;
+$border-radius: 8px;
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  user-select: none;
+}
