@@ -30,6 +30,11 @@ jobs:
       - name: Build project 🔨
         run: npm run build
 
+      - name: Configure GitHub Token 🔑
+        run: |
+          git remote set-url origin https://github.com/${{ github.repository }}.git
+          git config --global url."https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com".insteadOf "https://github.com"
+
       # Étape 5: Déployer sur GitHub Pages
       - name: Deploy to GitHub Pages 🚀
         uses: peaceiris/actions-gh-pages@v3
