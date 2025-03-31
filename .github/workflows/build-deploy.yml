@@ -33,12 +33,12 @@ jobs:
       - name: Configure GitHub Token 🔑
         run: |
           git remote set-url origin https://github.com/${{ github.repository }}.git
-          git config --global url."https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com".insteadOf "https://github.com"
+          git config --global url."https://x-access-token:${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com".insteadOf "https://github.com"
 
       # Étape 5: Déployer sur GitHub Pages
       - name: Deploy to GitHub Pages 🚀
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           publish_dir: ./dist
           keep_files: true # Garde les anciens fichiers
