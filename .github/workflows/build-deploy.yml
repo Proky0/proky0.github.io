@@ -1,35 +1,39 @@
-name: Build and Deploy to GitHub Pages
+name: Build and Deploy Portfolio FiveM
 
 on:
   push:
-    branches:
-      - main   # Déclenchement lors de push sur la branche 'main'
-  pull_request:
-    branches:
-      - main   # Déclenchement lors de PR sur la branche 'main'
+    branches: ["main"] # Déclenché sur push vers main
+  workflow_dispatch: # Permet de lancer manuellement
 
 jobs:
-  build:
-    runs-on: ubuntu-latest  # Utiliser une machine virtuelle Ubuntu
+  build-and-deploy:
+    runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2  # Vérifie ton code dans l'action
-
-      - name: Set up Node.js (si tu utilises Node.js)
-        uses: actions/setup-node@v2
+      # Étape 1: Checkout du code
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
         with:
-          node-version: '16'   # Spécifie la version de Node.js
+          fetch-depth: 0
 
-      - name: Install dependencies
-        run: npm install  # Installe les dépendances du projet
-
-      - name: Build project
-        run: npm run build  # Remplace par la commande appropriée pour ton projet (ex: jekyll build, hugo, etc.)
-
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
+      # Étape 2: Setup Node.js
+      - name: Setup Node.js 🏗️
+        uses: actions/setup-node@v4
         with:
-          branch: gh-pages  # La branche de destination pour GitHub Pages
-          folder: build      # Remplace par le dossier où tes fichiers générés sont placés (par exemple `dist` ou `public`)
-          token: ${{ secrets.GITHUB_TOKEN }}  # Utilisation du token GitHub pour pousser les changements
+          node-version: "20"
+
+      # Étape 3: Installer les dépendances
+      - name: Install dependencies 📦
+        run: npm install --legacy-peer-deps
+
+      # Étape 4: Builder le projet
+      - name: Build project 🔨
+        run: npm run build
+
+      # Étape 5: Déployer sur GitHub Pages
+      - name: Deploy to GitHub Pages 🚀
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          keep_files: true # Garde les anciens fichiers
