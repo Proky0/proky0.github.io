@@ -1,0 +1,511 @@
+[
+  {
+    "id": "ultimate-police",
+    "name": "Ultimate Police System",
+    "type": "fivem-script",
+    "category": "Légal",
+    "description": "Système policier complet avec grades, gestion de primes et analyse criminelle",
+    "features": ["10 grades différents", "Système de promotion", "Analyse criminelle avancée", "Gestion des mandats"],
+    "preview": "https://placehold.co/800x450/0d0d0d/ff00ff?text=Police+System",
+    "download": "",
+    "video": "",
+    "technologies": [
+      {
+        "name": "Lua",
+        "icon": "fas fa-code"
+      },
+      {
+        "name": "MySQL",
+        "icon": "fas fa-database"
+      }
+    ],
+    "year": 2023,
+    "downloads": 12500,
+    "compatibility": ["esx", "qb-core"]
+  },
+  {
+    "id": "illegal-crafting",
+    "name": "Illegal Crafting System",
+    "type": "fivem-script",
+    "category": "Illégal",
+    "description": "Système de craft illégal avec risques d'arrestation et fournisseurs",
+    "features": ["15 recettes illégales", "Système de fournisseurs", "Risques dynamiques", "Qualité variable"],
+    "preview": "https://placehold.co/800x450/0d0d0d/ff0000?text=Illegal+Crafting",
+    "download": "",
+    "video": "",
+    "technologies": [
+      {
+        "name": "Lua",
+        "icon": "fas fa-code"
+      },
+      {
+        "name": "Ox Inventory",
+        "icon": "fas fa-box-open"
+      }
+    ],
+    "year": 2024,
+    "downloads": 8700,
+    "compatibility": ["qb-core"]
+  },
+  {
+    "id": "real-farming",
+    "name": "Realistic Farming",
+    "type": "fivem-script",
+    "category": "Métier",
+    "description": "Agriculture réaliste avec saisons et marché fluctuant",
+    "features": ["Cycle de croissance", "Impact météo", "20+ cultures", "Marché boursier"],
+    "preview": "https://placehold.co/800x450/0d0d0d/00ff00?text=Farming",
+    "download": "",
+    "video": "",
+    "technologies": [
+      {
+        "name": "JavaScript",
+        "icon": "fab fa-js"
+      },
+      {
+        "name": "MongoDB",
+        "icon": "fas fa-database"
+      }
+    ],
+    "year": 2022,
+    "downloads": 6800,
+    "compatibility": ["esx"]
+  },
+  {
+    "id": "advanced-mechanic",
+    "name": "Advanced Mechanic",
+    "type": "fivem-script",
+    "category": "Métier",
+    "description": "Mécanique poussée avec usure des pièces et diagnostic",
+    "features": ["200+ pièces détachées", "Diagnostic électronique", "Usure réaliste", "Système de tuning"],
+    "preview": "https://placehold.co/800x450/0d0d0d/ffff00?text=Mechanic",
+    "download": "",
+    "video": "",
+    "technologies": [
+      {
+        "name": "C#",
+        "icon": "fas fa-code"
+      },
+      {
+        "name": "SQLite",
+        "icon": "fas fa-database"
+      }
+    ],
+    "year": 2023,
+    "downloads": 14200,
+    "compatibility": ["qb-core"]
+  },
+  {
+    "id": "gang-warfare",
+    "name": "Gang Warfare",
+    "type": "fivem-script",
+    "category": "Illégal",
+    "description": "Guerre de gangs avec territoires et gestion de ressources",
+    "features": ["15 territoires", "Système de réputation", "Gestion d'armes", "Alliances temporaires"],
+    "preview": "https://placehold.co/800x450/0d0d0d/ff00ff?text=Gang+Warfare",
+    "download": "",
+    "video": "",
+    "technologies": [
+      {
+        "name": "Lua",
+        "icon": "fas fa-code"
+      },
+      {
+        "name": "MySQL",
+        "icon": "fas fa-database"
+      }
+    ],
+    "year": 2023,
+    "downloads": 9500,
+    "compatibility": ["esx", "qb-core"]
+  },
+  {
+    "id": "real-estate",
+    "name": "Advanced Real Estate",
+    "type": "fivem-script",
+    "category": "Economie",
+    "description": "Immobilier complet avec crédits et gestion locative",
+    "features": ["200+ propriétés", "Système de crédit", "Gestion locative", "Marché fluctuant"],
+    "preview": "https://placehold.co/800x450/0d0d0d/00ffff?text=Real+Estate",
+    "download": "",
+    "video": "",
+    "technologies": [
+      {
+        "name": "Vue.js",
+        "icon": "fab fa-vuejs"
+      },
+      {
+        "name": "PostgreSQL",
+        "icon": "fas fa-database"
+      }
+    ],
+    "year": 2024,
+    "downloads": 5300,
+    "compatibility": ["esx"]
+  },
+  {
+    "id": "fishing-system",
+    "name": "Advanced Fishing",
+    "type": "fivem-script",
+    "category": "Activité",
+    "description": "Pêche réaliste avec espèces rares et marché aux poissons",
+    "features": ["50+ espèces", "Météo impactante", "Matériel spécifique", "Marché dynamique"],
+    "preview": "https://placehold.co/800x450/0d0d0d/0000ff?text=Fishing",
+    "download": "",
+    "video": "",
+    "technologies": [
+      {
+        "name": "Lua",
+        "icon": "fas fa-code"
+      },
+      {
+        "name": "Ox Inventory",
+        "icon": "fas fa-box-open"
+      }
+    ],
+    "year": 2022,
+    "downloads": 7200,
+    "compatibility": ["esx", "qb-core"]
+  },
+  {
+    "id": "prison-system",
+    "name": "Ultimate Prison",
+    "type": "fivem-script",
+    "category": "Légal",
+    "description": "Système carcéral complet avec activités et évasion",
+    "features": ["5 types de cellules", "Travaux forcés", "Système d'évasion", "Gestion des visites"],
+    "preview": "https://placehold.co/800x450/0d0d0d/ff0000?text=Prison",
+    "download": "",
+    "video": "",
+    "technologies": [
+      {
+        "name": "Lua",
+        "icon": "fas fa-code"
+      },
+      {
+        "name": "MySQL",
+        "icon": "fas fa-database"
+      }
+    ],
+    "year": 2023,
+    "downloads": 6100,
+    "compatibility": ["qb-core"]
+  },
+  {
+    "id": "blackmarket",
+    "name": "Dynamic Blackmarket",
+    "type": "fivem-script",
+    "category": "Illégal",
+    "description": "Marché noir dynamique avec aléas policiers",
+    "features": ["Objets illégaux", "Système de raid", "Prix variables", "Localisations aléatoires"],
+    "preview": "https://placehold.co/800x450/0d0d0d/ff00ff?text=Blackmarket",
+    "download": "",
+    "video": "",
+    "technologies": [
+      {
+        "name": "JavaScript",
+        "icon": "fab fa-js"
+      },
+      {
+        "name": "MongoDB",
+        "icon": "fas fa-database"
+      }
+    ],
+    "year": 2024,
+    "downloads": 8300,
+    "compatibility": ["esx", "qb-core"]
+  },
+  {
+    "id": "trucker-job",
+    "name": "Realistic Trucker",
+    "type": "fivem-script",
+    "category": "Métier",
+    "description": "Transport routier réaliste avec gestion de cargaison",
+    "features": ["20+ remorques", "Détérioration cargo", "Pannes mécaniques", "Contrats variés"],
+    "preview": "https://placehold.co/800x450/0d0d0d/ffff00?text=Trucker",
+    "download": "",
+    "video": "",
+    "technologies": [
+      {
+        "name": "Lua",
+        "icon": "fas fa-code"
+      },
+      {
+        "name": "SQLite",
+        "icon": "fas fa-database"
+      }
+    ],
+    "year": 2022,
+    "downloads": 4900,
+    "compatibility": ["esx"]
+  },
+  {
+    "id": "emergency-call",
+    "name": "Advanced 911 System",
+    "type": "fivem-script",
+    "category": "Légal",
+    "description": "Système d'appel d'urgence avec localisation précise",
+    "features": ["Reconnaissance vocale", "Localisation GPS", "Priorisation appels", "Historique complet"],
+    "preview": "https://placehold.co/800x450/0d0d0d/ff0000?text=911+System",
+    "download": "",
+    "video": "",
+    "technologies": [
+      {
+        "name": "JavaScript",
+        "icon": "fab fa-js"
+      },
+      {
+        "name": "WebSockets",
+        "icon": "fas fa-network-wired"
+      }
+    ],
+    "year": 2023,
+    "downloads": 11200,
+    "compatibility": ["qb-core"]
+  },
+  {
+    "id": "drug-system",
+    "name": "Realistic Drug System",
+    "type": "fivem-script",
+    "category": "Illégal",
+    "description": "Production et vente de drogues avec effets réalistes",
+    "features": ["10+ substances", "Effets visuels", "Dépendance", "Réseau de distribution"],
+    "preview": "https://placehold.co/800x450/0d0d0d/ff00ff?text=Drug+System",
+    "download": "",
+    "video": "",
+    "technologies": [
+      {
+        "name": "Lua",
+        "icon": "fas fa-code"
+      },
+      {
+        "name": "Ox Inventory",
+        "icon": "fas fa-box-open"
+      }
+    ],
+    "year": 2024,
+    "downloads": 14300,
+    "compatibility": ["esx", "qb-core"]
+  },
+  {
+    "id": "racing-system",
+    "name": "Street Racing",
+    "type": "fivem-script",
+    "category": "Activité",
+    "description": "Courses illégales avec pari et système de classe",
+    "features": ["15 circuits", "Système de pari", "Classes de véhicules", "Leaderboards"],
+    "preview": "https://placehold.co/800x450/0d0d0d/00ffff?text=Street+Racing",
+    "download": "",
+    "video": "",
+    "technologies": [
+      {
+        "name": "C#",
+        "icon": "fas fa-code"
+      },
+      {
+        "name": "SQLite",
+        "icon": "fas fa-database"
+      }
+    ],
+    "year": 2022,
+    "downloads": 6800,
+    "compatibility": ["standalone"]
+  },
+  {
+    "id": "banking-system",
+    "name": "Advanced Banking",
+    "type": "fivem-script",
+    "category": "Economie",
+    "description": "Système bancaire complet avec prêts et investissements",
+    "features": ["Comptes épargne", "Système de prêt", "Virements", "Historique détaillé"],
+    "preview": "https://placehold.co/800x450/0d0d0d/0000ff?text=Banking",
+    "download": "",
+    "video": "",
+    "technologies": [
+      {
+        "name": "Vue.js",
+        "icon": "fab fa-vuejs"
+      },
+      {
+        "name": "MySQL",
+        "icon": "fas fa-database"
+      }
+    ],
+    "year": 2023,
+    "downloads": 9200,
+    "compatibility": ["esx", "qb-core"]
+  },
+  {
+    "id": "hunting-system",
+    "name": "Wildlife Hunting",
+    "type": "fivem-script",
+    "category": "Activité",
+    "description": "Chasse réaliste avec animaux sauvages et trophées",
+    "features": ["30+ espèces", "Système de trophée", "Vente illégale", "Saisons impactantes"],
+    "preview": "https://placehold.co/800x450/0d0d0d/00ff00?text=Hunting",
+    "download": "",
+    "video": "",
+    "technologies": [
+      {
+        "name": "Lua",
+        "icon": "fas fa-code"
+      },
+      {
+        "name": "Ox Inventory",
+        "icon": "fas fa-box-open"
+      }
+    ],
+    "year": 2024,
+    "downloads": 5700,
+    "compatibility": ["qb-core"]
+  },
+  {
+    "id": "mining-system",
+    "name": "Realistic Mining",
+    "type": "fivem-script",
+    "category": "Métier",
+    "description": "Extraction minière avec minéraux rares et risques",
+    "features": ["15+ minerais", "Effondrements", "Valeur variable", "Outils spécialisés"],
+    "preview": "https://placehold.co/800x450/0d0d0d/ffff00?text=Mining",
+    "download": "",
+    "video": "",
+    "technologies": [
+      {
+        "name": "JavaScript",
+        "icon": "fab fa-js"
+      },
+      {
+        "name": "MongoDB",
+        "icon": "fas fa-database"
+      }
+    ],
+    "year": 2022,
+    "downloads": 4500,
+    "compatibility": ["esx"]
+  },
+  {
+    "id": "criminal-records",
+    "name": "Criminal Records",
+    "type": "fivem-script",
+    "category": "Légal",
+    "description": "Gestion des casiers judiciaires et empreintes digitales",
+    "features": [
+      "Base de données complète",
+      "Empreintes digitales",
+      "Recherche avancée",
+      "Historique des arrestations"
+    ],
+    "preview": "https://placehold.co/800x450/0d0d0d/ff0000?text=Criminal+Records",
+    "download": "",
+    "video": "",
+    "technologies": [
+      {
+        "name": "React",
+        "icon": "fab fa-react"
+      },
+      {
+        "name": "PostgreSQL",
+        "icon": "fas fa-database"
+      }
+    ],
+    "year": 2023,
+    "downloads": 7800,
+    "compatibility": ["qb-core"]
+  },
+  {
+    "id": "nightclub-system",
+    "name": "Nightclub Management",
+    "type": "fivem-script",
+    "category": "Economie",
+    "description": "Gestion de boîte de nuit avec événements et trafics",
+    "features": ["Gestion de personnel", "Événements spéciaux", "Trafics illégaux", "Système de popularité"],
+    "preview": "https://placehold.co/800x450/0d0d0d/ff00ff?text=Nightclub",
+    "download": "",
+    "video": "",
+    "technologies": [
+      {
+        "name": "Lua",
+        "icon": "fas fa-code"
+      },
+      {
+        "name": "MySQL",
+        "icon": "fas fa-database"
+      }
+    ],
+    "year": 2024,
+    "downloads": 6500,
+    "compatibility": ["esx", "qb-core"]
+  },
+  {
+    "id": "tow-system",
+    "name": "Advanced Tow Truck",
+    "type": "fivem-script",
+    "category": "Métier",
+    "description": "Dépanneuse réaliste avec dommages et gestion de dépôt",
+    "features": ["Système de dommages", "Dépôt sécurisé", "Contrats municipaux", "Matériel spécialisé"],
+    "preview": "https://placehold.co/800x450/0d0d0d/00ffff?text=Tow+Truck",
+    "download": "",
+    "video": "",
+    "technologies": [
+      {
+        "name": "C#",
+        "icon": "fas fa-code"
+      },
+      {
+        "name": "SQLite",
+        "icon": "fas fa-database"
+      }
+    ],
+    "year": 2022,
+    "downloads": 4200,
+    "compatibility": ["standalone"]
+  },
+  {
+    "id": "weather-system",
+    "name": "Dynamic Weather",
+    "type": "fivem-script",
+    "category": "Immersion",
+    "description": "Météo dynamique avec impacts sur le gameplay",
+    "features": ["15 conditions météo", "Effets visuels", "Impact véhicules", "Cycles saisonniers"],
+    "preview": "https://placehold.co/800x450/0d0d0d/0000ff?text=Weather",
+    "download": "",
+    "video": "",
+    "technologies": [
+      {
+        "name": "Lua",
+        "icon": "fas fa-code"
+      },
+      {
+        "name": "FiveM Natives",
+        "icon": "fas fa-cloud"
+      }
+    ],
+    "year": 2023,
+    "downloads": 15300,
+    "compatibility": ["esx", "qb-core", "standalone"]
+  },
+  {
+    "id": "pet-system",
+    "name": "Pet Companion",
+    "type": "fivem-script",
+    "category": "Immersion",
+    "description": "Système d'animaux de compagnie avec interactions",
+    "features": ["10+ espèces", "Système d'humeur", "Commandes vocales", "Boutique d'accessoires"],
+    "preview": "https://placehold.co/800x450/0d0d0d/00ff00?text=Pets",
+    "download": "",
+    "video": "",
+    "technologies": [
+      {
+        "name": "JavaScript",
+        "icon": "fab fa-js"
+      },
+      {
+        "name": "Ox Inventory",
+        "icon": "fas fa-box-open"
+      }
+    ],
+    "year": 2024,
+    "downloads": 8900,
+    "compatibility": ["qb-core"]
+  }
+]
