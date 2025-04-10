@@ -23,3 +23,19 @@ interface Technologie {
   name: string;
   icon: string;
 }
+
+interface Script {
+  id: string;
+  name: string;
+  type: string;
+  category: string;
+  description: string;
+  features: string[];
+  preview: string;
+  download: string;
+  video: string;
+  technologies: Technology[];
+  year: number;
+  downloads: number;
+  compatibility: string[];
+}
