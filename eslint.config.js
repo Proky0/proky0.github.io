@@ -34,7 +34,6 @@ export default [
       'vue/no-side-effects-in-computed-properties': 'off', // Désactive la vérification des effets de bord dans les propriétés calculées
       'vue/require-v-for-key': 'off', // Désactive l'obligation d'utiliser `:key` avec `v-for`
       'vue/no-v-html': 'off', // Désactive l'interdiction d'utiliser `v-html`
-      'vue/script-setup-uses-vars': 'warn', // Avertit si les variables définies dans `<script setup>` ne sont pas utilisées
       'vue/no-unused-properties': [
         'warn',
         {
