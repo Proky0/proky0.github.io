@@ -29,15 +29,6 @@
               class="bottom-0 left-0 absolute bg-pink-400 w-0 group-hover:w-full h-0.5 transition-all duration-300"
             ></span>
           </router-link>
-
-          <!-- Bouton Documentation -->
-          <button
-            @click="goToDoc"
-            class="flex items-center bg-gradient-to-r from-pink-500 hover:from-pink-400 to-purple-600 hover:to-purple-500 ml-4 px-4 py-2 rounded-lg font-bold text-white text-sm tracking-wider transition-all duration-300"
-          >
-            <i class="mr-2 fas fa-book-open"></i>
-            DOCS
-          </button>
         </nav>
 
         <!-- Menu mobile -->
@@ -84,7 +75,6 @@
 </template>
 
 <script setup lang="ts">
-import router from '@/router';
 import { ref } from 'vue';
 
 const isMobileMenuOpen = ref(false);
@@ -95,8 +85,6 @@ const navLinks = [
   { name: 'Scripts', path: '/scripts' },
   { name: 'Contact', path: '/contact' },
 ];
-
-const goToDoc = (): void => router.push({ path: '/docs' });
 </script>
 
 <style scoped>

@@ -13,26 +13,18 @@ import ContactView from '@views/ContactView.vue';
 /* Scripts View */
 import ScriptsView from '@views/Script/ScriptsView.vue';
 
-/* Documentation View */
-import DocsView from '@views/Docs/DocsView.vue';
-
 const routes = [
   { path: '/', component: HomeView },
   { path: '/projects', component: ProjectsView },
   { path: '/projects/:id', component: ProjectDetail, props: true }, // Dynamic route
   { path: '/contact', component: ContactView },
   { path: '/scripts', component: ScriptsView },
-  { path: '/docs', component: DocsView },
-  {
-    path: '/docs/:slug',
-    component: DocsView,
-  }
 ];
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes,
-  scrollBehavior(to, from, savedPosition) {
+  scrollBehavior(_to, _from, savedPosition) {
     return savedPosition || { top: 0 };
   }
 });
