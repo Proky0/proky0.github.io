@@ -1,38 +1,31 @@
 <template>
   <div class="relative bg-gray-900/80 py-14 min-h-screen overflow-hidden">
-    <!-- Animated Grid Background -->
     <div class="fixed inset-0 opacity-10 overflow-hidden">
       <div class="absolute inset-0 grid-bg"></div>
     </div>
 
-    <!-- Main Content -->
     <div class="z-10 relative mx-auto px-4 container">
-      <!-- Back Button -->
       <button
         @click="goBack"
         class="group flex items-center gap-3 mb-12 text-pink-400 hover:text-purple-400 transition-colors"
       >
         <i class="fa-arrow-left text-xl transition-transform group-hover:-translate-x-1 fas"></i>
-        <span class="font-medium text-lg">Retour aux projets</span>
+        <span class="font-medium text-lg">{{ $t('projectDetails.backToProjects') }}</span>
       </button>
 
-      <!-- Project Header -->
       <div class="mb-16 text-center">
         <h1
           class="bg-clip-text bg-gradient-to-r from-pink-400 to-purple-400 mb-6 font-bold text-transparent text-4xl md:text-6xl"
         >
-          {{ project?.name || 'Projet non trouvé' }}
+          {{ project?.name || $t('projectDetails.projectNotFound') }}
         </h1>
         <p class="mx-auto max-w-3xl text-gray-300 text-xl">
-          {{ project?.description || 'Aucune description disponible.' }}
+          {{ project?.description || $t('projectDetails.noDescription') }}
         </p>
       </div>
 
-      <!-- Project Content -->
       <div class="gap-12 grid grid-cols-1 lg:grid-cols-3">
-        <!-- Left Column - Project Info -->
         <div class="space-y-12 lg:col-span-2">
-          <!-- Video Preview -->
           <div v-if="project?.video" class="bg-gray-900/70 border border-pink-400/20 rounded-xl overflow-hidden">
             <div class="aspect-h-9 aspect-w-16">
               <iframe
@@ -45,12 +38,11 @@
               ></iframe>
               <div v-else class="flex flex-col justify-center items-center bg-gray-800/50 h-full text-pink-400">
                 <i class="mb-4 text-5xl fas fa-video-slash"></i>
-                <p>Vidéo non disponible</p>
+                <p>{{ $t('projectDetails.videoNotAvailable') }}</p>
               </div>
             </div>
           </div>
 
-          <!-- Image Prevriw -->
           <div v-else class="bg-gray-900/70 border border-pink-400/20 rounded-xl overflow-hidden">
             <div class="aspect-h-9 aspect-w-16">
               <img
@@ -61,15 +53,14 @@
               />
               <div v-else class="flex flex-col justify-center items-center bg-gray-800/50 h-full text-pink-400">
                 <i class="mb-4 text-5xl fas fa-image"></i>
-                <p>Photo non disponible</p>
+                <p>{{ $t('projectDetails.photoNotAvailable') }}</p>
               </div>
             </div>
           </div>
-          <!-- Image Gallery -->
           <div v-if="project?.images?.length" class="space-y-6">
             <h2 class="flex items-center font-bold text-pink-400 text-2xl">
               <i class="mr-3 fas fa-images"></i>
-              Galerie du projet
+              {{ $t('projectDetails.projectGallery') }}
             </h2>
             <div class="gap-4 grid grid-cols-2 md:grid-cols-3">
               <div
@@ -92,11 +83,10 @@
             </div>
           </div>
 
-          <!-- Project Details -->
           <div v-if="project?.details" class="bg-gray-900/70 p-6 border border-gray-700 rounded-xl">
             <h2 class="flex items-center mb-6 font-bold text-pink-400 text-2xl">
               <i class="mr-3 fas fa-info-circle"></i>
-              Détails techniques
+              {{ $t('projectDetails.technicalDetails') }}
             </h2>
             <div class="prose-invert max-w-none prose">
               <p v-for="(detail, index) in project.details" :key="index" class="mb-4 last:mb-0">
@@ -106,25 +96,7 @@
           </div>
         </div>
 
-        <!-- Right Column - Meta Info -->
         <div class="space-y-8">
-          <!-- Quick Stats -->
-          <div class="bg-gray-900/70 p-6 border border-pink-400/20 rounded-xl">
-            <h2 class="flex items-center mb-4 font-bold text-pink-400 text-xl">
-              <i class="mr-2 fas fa-chart-bar"></i>
-              Statistiques
-            </h2>
-            <div class="space-y-4">
-              <div v-if="project?.duration" class="flex justify-between items-center">
-                <span class="text-gray-400">Durée</span>
-                <span class="font-mono text-purple-400">
-                  {{ formatDate(project.duration.start) }} - {{ formatDate(project.duration.end) }}
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Technologies -->
           <div class="bg-gray-900/70 p-6 border border-pink-400/20 rounded-xl">
             <h2 class="flex items-center mb-4 font-bold text-pink-400 text-xl">
               <i class="mr-2 fas fa-code"></i>
@@ -142,34 +114,35 @@
             </div>
           </div>
 
-          <!-- Links -->
           <div
-            v-if="project?.github || project?.tebex"
+            v-if="project?.github || project?.tebex || project?.documentation"
             class="space-y-4 bg-gray-900/70 p-6 border border-pink-400/20 rounded-xl"
           >
             <h2 class="flex items-center mb-2 font-bold text-pink-400 text-xl">
               <i class="mr-2 fas fa-external-link-alt"></i>
-              Liens
+              {{ $t('projectDetails.links') }}
             </h2>
             <a
+              v-if="project?.github"
               :href="project.github"
               target="_blank"
               class="flex justify-between items-center bg-gray-800 hover:bg-gray-700 px-4 py-3 rounded-lg transition-colors"
             >
               <div class="flex items-center">
                 <i class="mr-3 text-gray-300 text-xl fab fa-github"></i>
-                <span>GitHub</span>
+                <span>{{ $t('projectDetails.github') }}</span>
               </div>
               <i class="fa-chevron-right text-gray-400 fas"></i>
             </a>
             <a
+              v-if="project?.tebex"
               :href="project.tebex"
               target="_blank"
               class="flex justify-between items-center bg-gray-800 hover:bg-gray-700 px-4 py-3 rounded-lg transition-colors"
             >
               <div class="flex items-center">
                 <i class="mr-3 text-gray-300 text-xl fas fa-shopping-cart"></i>
-                <span>Tebex Store</span>
+                <span>{{ $t('projectDetails.tebexStore') }}</span>
               </div>
               <i class="fa-chevron-right text-gray-400 fas"></i>
             </a>
@@ -181,7 +154,7 @@
             >
               <div class="flex items-center">
                 <i class="mr-3 text-gray-300 text-xl fas fa-book"></i>
-                <span>Documentation</span>
+                <span>{{ $t('projectDetails.documentation') }}</span>
               </div>
               <i class="fa-chevron-right text-gray-400 fas"></i>
             </a>
@@ -190,7 +163,6 @@
       </div>
     </div>
 
-    <!-- Lightbox Modal -->
     <transition name="fade">
       <div
         v-if="lightboxImage"
@@ -205,21 +177,21 @@
           />
           <button
             @click="closeLightbox"
-            class="top-4 right-4 absolute flex justify-center items-center bg-black/50 hover:bg-black/70 rounded-full w-10 h-10 text-white text-xl transition-colors"
+            class="top-4 right-4 absolute flex justify-center items-center bg-black/50 hover:bg-black/70 rounded-md w-10 h-10 text-white text-xl transition-colors"
           >
             <i class="fas fa-times"></i>
           </button>
           <button
             v-if="hasPreviousImage"
             @click.stop="showPreviousImage"
-            class="top-1/2 left-4 absolute flex justify-center items-center bg-black/50 hover:bg-black/70 rounded-full w-10 h-10 text-white text-xl transition-colors -translate-y-1/2"
+            class="top-1/2 left-4 absolute flex justify-center items-center bg-black/50 hover:bg-black/70 rounded-md w-10 h-10 text-white text-xl transition-colors -translate-y-1/2"
           >
             <i class="fa-chevron-left fas"></i>
           </button>
           <button
             v-if="hasNextImage"
             @click.stop="showNextImage"
-            class="top-1/2 right-4 absolute flex justify-center items-center bg-black/50 hover:bg-black/70 rounded-full w-10 h-10 text-white text-xl transition-colors -translate-y-1/2"
+            class="top-1/2 right-4 absolute flex justify-center items-center bg-black/50 hover:bg-black/70 rounded-md w-10 h-10 text-white text-xl transition-colors -translate-y-1/2"
           >
             <i class="fa-chevron-right fas"></i>
           </button>
@@ -283,15 +255,6 @@ const goBack = (): void => {
     router.push('/projects');
   }
 };
-
-// Helper function
-const formatDate = (dateString: string): string => {
-  return new Date(dateString).toLocaleDateString('fr-FR', {
-    year: 'numeric',
-    month: 'short',
-    day: 'numeric',
-  });
-};
 </script>
 
 <style scoped>
@@ -307,7 +270,8 @@ const formatDate = (dateString: string): string => {
 .aspect-w-16 {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  padding-bottom: 56.25%;
+  /* 16:9 Aspect Ratio */
 }
 
 .aspect-w-16 > * {

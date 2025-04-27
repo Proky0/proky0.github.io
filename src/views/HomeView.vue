@@ -1,45 +1,40 @@
 <template>
   <div class="relative bg-gray-900/80 min-h-screen overflow-hidden">
-    <!-- Floating Tech Icons -->
     <div class="absolute inset-0 overflow-hidden">
       <i class="absolute text-pink-400/10 text-6xl fa-brands fa-vuejs" style="top: 20%; left: 10%"></i>
       <i class="absolute text-purple-400/10 text-7xl fa-brands fa-js" style="top: 30%; right: 15%"></i>
-      <i class="absolute text-blue-400/10 text-5xl fa-brands fa-laravel" style="bottom: 25%; left: 20%"></i>
-      <i class="absolute text-green-400/10 text-6xl fa-brands fa-node-js" style="bottom: 15%; right: 25%"></i>
+      <i class="absolute text-blue-400/10 text-5xl fa-brands fa-css3" style="bottom: 25%; left: 20%"></i>
+      <i class="absolute text-green-400/10 text-6xl fa-brands fa-html5" style="bottom: 15%; right: 25%"></i>
     </div>
 
-    <!-- Main Content -->
     <div class="z-10 relative flex flex-col justify-center items-center px-4 py-20 min-h-screen text-center">
-      <!-- Animated Title -->
       <h1 class="mb-6 font-bold text-5xl md:text-7xl tracking-tight">
         <span
           class="bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 text-transparent animate-gradient"
         >
-          PORTFOLIO FIVEM
+          {{ $t('hero.title') }}
         </span>
       </h1>
 
-      <!-- Subtitle with Typing Effect -->
       <div class="mb-12 max-w-3xl">
         <p class="font-mono text-gray-300 text-xl typing-effect">
-          > Développeur Full-Stack spécialisé dans l'écosystème FiveM
+          {{ $t('hero.subtitle') }}
         </p>
         <p class="mt-4 font-mono text-pink-400/80 text-lg md:text-xl">
-          Création de scripts sur-mesure • Optimisation • UI/UX innovantes
+          {{ $t('hero.description') }}
         </p>
       </div>
 
-      <!-- Animated CTA Button -->
       <router-link
         to="/projects"
-        class="group relative bg-gradient-to-r from-pink-600 hover:from-pink-500 to-purple-600 hover:to-purple-500 shadow-lg hover:shadow-pink-400/30 px-8 py-4 rounded-full overflow-hidden font-bold text-white tracking-wider transition-all duration-300"
+        class="group relative bg-gradient-to-r from-pink-600 hover:from-pink-500 to-purple-600 hover:to-purple-500 shadow-lg hover:shadow-pink-400/30 px-8 py-4 rounded-md overflow-hidden font-bold text-white tracking-wider transition-all duration-300"
       >
-        <span class="z-10 relative">EXPLORER MES PROJETS</span>
+        <span class="z-10 relative">{{ $t('hero.cta') }}</span>
         <span
           class="absolute inset-0 bg-gradient-to-r from-pink-400 to-purple-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
         ></span>
         <span
-          class="absolute -inset-2 border-2 border-pink-400/30 group-hover:border-pink-400/50 rounded-full transition-all animate-pulse duration-500"
+          class="absolute -inset-2 border-2 border-pink-400/30 group-hover:border-pink-400/50 rounded-md transition-all animate-pulse duration-500"
         ></span>
       </router-link>
     </div>

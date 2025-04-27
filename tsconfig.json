@@ -22,7 +22,7 @@
 			"@/*": ["src/*"],
 			"@assets/*": ["src/assets/*"],
 			"@views/*": ["src/views/*"],
-      "@docs/*": ["src/docs/*"],
+      "@locales/*": ["src/locales/*"],
 			"@components/*": ["src/components/*"]
     }
   },

@@ -3,10 +3,9 @@
   <header class="top-0 z-50 sticky bg-black/90 backdrop-blur-lg border-pink-400/30 border-b neon-header">
     <div class="mx-auto px-4 container">
       <div class="flex justify-between items-center h-16">
-        <!-- Logo avec effet néon -->
         <router-link to="/" class="group flex items-center space-x-2" aria-label="Accueil">
           <div
-            class="flex justify-center items-center bg-gradient-to-r from-pink-400 to-purple-500 rounded-full w-8 h-8 neon-logo"
+            class="flex justify-center items-center bg-gradient-to-r from-pink-400 to-purple-500 rounded-md w-8 h-8 neon-logo"
           >
             <i class="text-white text-sm fas fa-code"></i>
           </div>
@@ -15,7 +14,6 @@
           ></h1>
         </router-link>
 
-        <!-- Navigation principale -->
         <nav class="hidden md:flex items-center space-x-6">
           <router-link
             v-for="link in navLinks"
@@ -24,14 +22,13 @@
             class="group relative py-1 font-medium text-gray-300 hover:text-white text-sm uppercase tracking-wider transition-colors"
             active-class="text-pink-400"
           >
-            {{ link.name }}
+            {{ $t(`header.${link.name.toLowerCase()}`) }}
             <span
               class="bottom-0 left-0 absolute bg-pink-400 w-0 group-hover:w-full h-0.5 transition-all duration-300"
             ></span>
           </router-link>
         </nav>
 
-        <!-- Menu mobile -->
         <button
           @click="isMobileMenuOpen = !isMobileMenuOpen"
           class="md:hidden focus:outline-none text-gray-300 hover:text-pink-400"
@@ -41,7 +38,6 @@
         </button>
       </div>
 
-      <!-- Menu mobile déroulant -->
       <transition
         enter-active-class="transition ease-out duration-100"
         enter-from-class="transform opacity-0 scale-95"
@@ -54,19 +50,19 @@
           <router-link
             v-for="link in navLinks"
             :key="link.path"
-            :to="link.path"
+            :to="{ name: link.nameRoute, params: { locale: $i18n.locale } }"
             class="block hover:bg-gray-800/50 px-3 py-2 rounded-md font-medium text-gray-300 hover:text-white text-base transition-colors"
             active-class="text-pink-400 bg-gray-800/50"
             @click="isMobileMenuOpen = false"
           >
-            {{ link.name }}
+            {{ $t(`header.${link.name.toLowerCase()}`) }}
           </router-link>
 
           <button
             class="flex items-center bg-gradient-to-r from-pink-500 hover:from-pink-400 to-purple-600 hover:to-purple-500 ml-4 px-4 py-2 rounded-lg font-bold text-white text-sm tracking-wider transition-all duration-300"
           >
             <i class="mr-2 fas fa-book-open"></i>
-            DOCS
+            {{ $t('header.docs') }}
           </button>
         </div>
       </transition>
@@ -80,8 +76,8 @@ import { ref } from 'vue';
 const isMobileMenuOpen = ref(false);
 
 const navLinks = [
-  { name: 'Accueil', path: '/' },
-  { name: 'Projets', path: '/projects' },
+  { name: 'Home', path: '/' },
+  { name: 'Projects', path: '/projects' },
   { name: 'Scripts', path: '/scripts' },
   { name: 'Contact', path: '/contact' },
 ];

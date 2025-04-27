@@ -1,0 +1,64 @@
+{
+  "header": {
+    "home": "Accueil",
+    "projects": "Projets",
+    "scripts": "Scripts",
+    "contact": "Contact",
+    "docs": "DOCS"
+  },
+  "hero": {
+    "title": "PORTFOLIO FIVEM",
+    "subtitle": "> Développeur Full-Stack spécialisé dans l'écosystème FiveM",
+    "description": "Création de scripts sur-mesure • Optimisation • UI/UX innovantes",
+    "cta": "EXPLORER MES PROJETS"
+  },
+  "projectDetails": {
+    "backToProjects": "Retour aux projets",
+    "projectNotFound": "Projet non trouvé",
+    "noDescription": "Aucune description disponible.",
+    "videoNotAvailable": "Vidéo non disponible",
+    "photoNotAvailable": "Photo non disponible",
+    "projectGallery": "Galerie du projet",
+    "technicalDetails": "Détails techniques",
+    "links": "Liens",
+    "github": "GitHub",
+    "tebexStore": "Tebex Store",
+    "documentation": "Documentation"
+  },
+  "projectsList": {
+    "viewDetails": "Voir les détails",
+    "gitHubRepo": "Répertoire GitHub",
+    "tebexStore": "Boutique Tebex",
+    "downloads": "Téléchargements"
+  },
+  "scriptsList": {
+    "searchPlaceholder": "Rechercher un script...",
+    "allCategories": "Toutes catégories",
+    "allFrameworks": "Tous frameworks",
+    "scripts": "Scripts",
+    "categories": "Catégories",
+    "frameworks": "Frameworks",
+    "features": "Fonctionnalités"
+  },
+  "contact": {
+    "discordTitle": "Discord",
+    "discordDescription": "Rejoignez mon serveur pour discuter",
+    "copyUsername": "Cliquez pour copier",
+    "githubTitle": "GitHub",
+    "githubDescription": "Mes projets FiveM open-source",
+    "fivemTitle": "FiveM",
+    "fivemDescription": "Mes ressources et scripts",
+    "twitterTitle": "Twitter/X",
+    "twitterDescription": "Mes annonces et updates"
+  },
+  "footer": {
+    "copyright": "© {year} FiveM Script Archive. Tous droits réservés.",
+    "backToTop": "Haut de page"
+  },
+  "social": {
+    "discord": "Discord",
+    "github": "GitHub",
+    "twitter": "Twitter",
+    "fivem": "FiveM Forum"
+  }
+}
