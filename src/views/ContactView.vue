@@ -34,7 +34,7 @@
             <div
               class="bg-indigo-900/20 hover:bg-indigo-900/30 p-3 border border-indigo-400/10 hover:border-indigo-400/20 rounded-lg font-mono text-indigo-200 hover:text-white text-center transition-all duration-300 cursor-pointer"
             >
-              username#1234
+              proky.
               <div
                 class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity"
               >
@@ -64,11 +64,11 @@
             </div>
             <p class="mb-4 text-gray-300">{{ $t('contact.githubDescription') }}</p>
             <a
-              href="https://github.com/votreusername"
+              href="https://github.com/Proky0"
               target="_blank"
               class="block bg-purple-900/20 hover:bg-purple-900/30 p-3 border border-purple-400/10 hover:border-purple-400/20 rounded-lg font-mono text-purple-200 hover:text-white text-center transition-all duration-300"
             >
-              github.com/votreusername
+              github.com/Proky0
             </a>
           </div>
         </div>
@@ -93,7 +93,7 @@
             </div>
             <p class="mb-4 text-gray-300">{{ $t('contact.fivemDescription') }}</p>
             <a
-              href="https://forum.cfx.re/u/votreusername"
+              href="https://forum.cfx.re/u/proky"
               target="_blank"
               class="block bg-orange-900/20 hover:bg-orange-900/30 p-3 border border-orange-400/10 hover:border-orange-400/20 rounded-lg font-mono text-orange-200 hover:text-white text-center transition-all duration-300"
             >
@@ -122,11 +122,11 @@
             </div>
             <p class="mb-4 text-gray-300">{{ $t('contact.twitterDescription') }}</p>
             <a
-              href="https://twitter.com/votrehandle"
+              href="https://x.com/Proky0"
               target="_blank"
               class="block bg-cyan-900/20 hover:bg-cyan-900/30 p-3 border border-cyan-400/10 hover:border-cyan-400/20 rounded-lg font-mono text-cyan-200 hover:text-white text-center transition-all duration-300"
             >
-              @votrehandle
+              @Proky0
             </a>
           </div>
         </div>
