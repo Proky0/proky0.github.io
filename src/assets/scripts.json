@@ -1,0 +1,522 @@
+[
+  {
+    "id": "character-clothes",
+    "name": "Character Clothes",
+    "type": "fivem-script",
+    "category": "Character",
+    "description": "Gestion complète des vêtements du personnage joueur. Permet aux joueurs de changer et sauvegarder leurs tenues via des menus interactifs.",
+    "features": [
+      "Changement de tenues complètes via une interface (NUI)",
+      "Sauvegarde et chargement rapide des tenues personnalisées ('outfits')",
+      "Accès via des magasins de vêtements ou des points de garde-robe dédiés",
+      "Synchronisation réseau des changements de vêtements"
+    ],
+    "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Character+Clothes&fontsize=60",
+    "video": "",
+    "technologies": [
+      { "name": "Lua", "icon": "fas fa-code" },
+      { "name": "FiveM Natives", "icon": "fas fa-cloud" },
+      { "name": "NUI (Vue3/Scss)", "icon": "fab fa-html5" }
+    ],
+    "year": 2022,
+    "compatibility": ["altica"]
+  },
+  {
+    "id": "lucky-wheel",
+    "name": "Lucky Wheel",
+    "type": "fivem-script",
+    "category": "Character",
+    "description": "Implémente une roue de la fortune interactive (type casino Diamond Casino) où les joueurs peuvent tenter leur chance pour gagner diverses récompenses.",
+    "features": [
+      "Récompenses entièrement configurables (items, argent, véhicules, etc.)",
+      "Probabilités de gain ajustables pour chaque récompense",
+      "Cooldown personnalisable pour éviter l'abus",
+      "Interaction via marqueur ou commande"
+    ],
+    "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Lucky+Wheel&fontsize=70",
+    "video": "",
+    "technologies": [
+      { "name": "Lua", "icon": "fas fa-code" },
+      { "name": "FiveM Natives", "icon": "fas fa-cloud" }
+    ],
+    "year": 2022,
+    "compatibility": ["altica"]
+  },
+  {
+    "id": "inventory-drop",
+    "name": "Inventory Drop",
+    "type": "fivem-script",
+    "category": "Inventaire",
+    "description": "Gère les objets lâchés au sol par les joueurs, avec une représentation visuelle de l'objet et un système de ramassage interactif.",
+    "features": [
+      "Affichage d'un objet 3D ou d'une icône au sol pour l'item drop",
+      "Système de pickup visuel avec nom/quantité de l'item",
+      "Désintégration automatique des objets après un délai configurable",
+      "Notification au joueur lors du drop d'un item",
+      "Optimisation pour éviter la surcharge d'entités"
+    ],
+    "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Inventory+Drop&fontsize=65",
+    "video": "",
+    "technologies": [
+      { "name": "Lua", "icon": "fas fa-code" },
+      { "name": "FiveM Natives", "icon": "fas fa-cloud" }
+    ],
+    "year": 2022,
+    "compatibility": ["altica"]
+  },
+  {
+    "id": "inventory-manager",
+    "name": "Inventory Manager",
+    "type": "fivem-script",
+    "category": "Inventaire",
+    "description": "Système fondamental pour la gestion des inventaires (personnel, coffre de véhicule, propriété, etc.), incluant le poids et la persistance des données.",
+    "features": [
+      "Gestion du poids ou des slots d'inventaire configurable",
+      "Sauvegarde persistante en base de données (MySQL/OxMySQL)",
+      "Support des métadonnées d'items (numéro de série, qualité, etc.)",
+      "Interface utilisateur (NUI) pour la gestion"
+    ],
+    "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Inventory+Manager&fontsize=60",
+    "video": "",
+    "technologies": [
+      { "name": "Lua", "icon": "fas fa-code" },
+      { "name": "FiveM Natives", "icon": "fas fa-cloud" },
+      { "name": "NUI (Vue3/Scss)", "icon": "fab fa-html5" }
+    ],
+    "year": 2022,
+    "compatibility": ["altica"]
+  },
+  {
+    "id": "property-creator",
+    "name": "Property Creator",
+    "type": "fivem-script",
+    "category": "Inventaire",
+    "description": "Outil en jeu (souvent réservé aux administrateurs) permettant de créer et configurer de nouvelles propriétés immobilières achetables par les joueurs.",
+    "features": [
+      "Interface de création/édition de propriétés en jeu",
+      "Placement des points d'entrée, sortie, garage, garde-robe, coffre",
+      "Définition du prix, du type de propriété, de l'intérieur (IPL/Shell)",
+      "Configuration des accès initiaux (vente publique, métier spécifique)",
+      "Sauvegarde des configurations en base de données ou fichier"
+    ],
+    "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Property+Creator&fontsize=60",
+    "video": "",
+    "technologies": [
+      { "name": "Lua", "icon": "fas fa-code" },
+      { "name": "FiveM Natives", "icon": "fas fa-cloud" }
+    ],
+    "year": 2022,
+    "compatibility": ["altica"]
+  },
+  {
+    "id": "card",
+    "name": "Card",
+    "type": "fivem-script",
+    "category": "Interfaces",
+    "description": "Système permettant d'afficher des cartes d'information personnalisables à l'écran.",
+    "features": [
+      "Plusieurs modèles de cartes prédéfinis ou personnalisables",
+      "Affichage de la carte via une commande ou une touche",
+      "Possibilité de montrer sa carte à un joueur proche",
+      "Interface NUI pour un affichage propre et moderne"
+    ],
+    "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Card&fontsize=70",
+    "video": "",
+    "technologies": [
+      { "name": "Lua", "icon": "fas fa-code" },
+      { "name": "FiveM Natives", "icon": "fas fa-cloud" },
+      { "name": "NUI (Vue3/Scss)", "icon": "fab fa-html5" }
+    ],
+    "year": 2022,
+    "compatibility": ["altica"]
+  },
+  {
+    "id": "coma",
+    "name": "Coma",
+    "type": "fivem-script",
+    "category": "Interfaces",
+    "description": "Gère l'état de 'coma' ou 'inconscient' d'un joueur après avoir été neutralisé ('mort RP'), incluant une interface visuelle et des options d'interaction.",
+    "features": [
+      "Interface NUI affichant un compte à rebours avant mort définitive/respawn",
+      "Effets visuels et sonores pour simuler l'inconscience",
+      "Appel automatique (ou manuel via interface) aux services de secours (EMS)",
+      "Possibilité de réanimation par les EMS ou via items spécifiques (défibrillateur)",
+      "Respawn à l'hôpital après le délai si non réanimé",
+      "Configuration des timers et options"
+    ],
+    "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Coma&fontsize=70",
+    "video": "",
+    "technologies": [
+      { "name": "Lua", "icon": "fas fa-code" },
+      { "name": "FiveM Natives", "icon": "fas fa-cloud" },
+      { "name": "NUI (HTML/CSS/JS)", "icon": "fab fa-html5" }
+    ],
+    "year": 2022,
+    "compatibility": ["altica"]
+  },
+  {
+    "id": "dui",
+    "name": "DUI",
+    "type": "fivem-script",
+    "category": "Interfaces",
+    "description": "Bibliothèque ou framework permettant aux développeurs d'afficher des interfaces utilisateur dynamiques (Dynamic User Interfaces) complexes en jeu, basées sur HTML/JS/CSS (NUI).",
+    "features": [
+      "Pont de communication efficace entre Lua et l'interface NUI (JS)",
+      "Facilite l'affichage d'images dynamiques et le contenu web",
+      "Support des URLs locales ou distantes pour les ressources NUI",
+      "Optimisation des performances pour l'affichage d'interfaces complexes"
+    ],
+    "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=DUI+Framework&fontsize=60",
+    "video": "",
+    "technologies": [
+      { "name": "Lua", "icon": "fas fa-code" },
+      { "name": "FiveM Natives", "icon": "fas fa-cloud" }
+    ],
+    "year": 2022,
+    "compatibility": ["altica"]
+  },
+  {
+    "id": "election",
+    "name": "Election",
+    "type": "fivem-script",
+    "category": "Interfaces",
+    "description": "Système permettant d'organiser des élections en jeu (ex: maire, gouverneur) avec candidature, vote sécurisé et affichage des résultats.",
+    "features": [
+      "Configuration des périodes de candidature et de vote",
+      "Interface NUI pour se présenter, consulter les candidats et voter",
+      "Notifications en jeu pour les différentes phases de l'élection"
+    ],
+    "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Election&fontsize=70",
+    "video": "",
+    "technologies": [
+      { "name": "Lua", "icon": "fas fa-code" },
+      { "name": "FiveM Natives", "icon": "fas fa-cloud" },
+      { "name": "NUI (Vue3/Scss)", "icon": "fab fa-html5" }
+    ],
+    "year": 2022,
+    "compatibility": ["altica"]
+  },
+  {
+    "id": "invoice",
+    "name": "Facture",
+    "type": "fivem-script",
+    "category": "Interfaces",
+    "description": "Permet aux joueurs (souvent entreprises ou services comme mécaniciens, EMS, police) de créer, envoyer et gérer des factures à d'autres joueurs.",
+    "features": [
+      "Interface NUI pour créer une facture (destinataire, montant, motif)",
+      "Interface pour consulter et payer les factures reçues",
+      "Suivi des paiements et des factures impayées",
+      "Historique des factures envoyées/reçues",
+      "Intégration avec les comptes bancaires des joueurs"
+    ],
+    "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Facture&fontsize=70",
+    "video": "",
+    "technologies": [
+      { "name": "Lua", "icon": "fas fa-code" },
+      { "name": "FiveM Natives", "icon": "fas fa-cloud" },
+      { "name": "NUI (Vue3/Scss)", "icon": "fab fa-html5" }
+    ],
+    "year": 2022,
+    "compatibility": ["altica"]
+  },
+  {
+    "id": "racing",
+    "name": "Racing",
+    "type": "fivem-script",
+    "category": "Interfaces",
+    "description": "Système complet pour organiser et participer à des courses de véhicules, avec création de circuits, classements et récompenses.",
+    "features": [
+      "Interface NUI pour rejoindre/créer des courses et sélectionner un véhicule",
+      "Système de checkpoints précis et synchronisés",
+      "Affichage en temps réel du classement, du temps au tour et du temps total",
+      "Support de différents types de courses (circuit, sprint)",
+      "Intégration potentielle avec un script d'éditeur de courses"
+    ],
+    "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Racing&fontsize=70",
+    "video": "",
+    "technologies": [
+      { "name": "Lua", "icon": "fas fa-code" },
+      { "name": "FiveM Natives", "icon": "fas fa-cloud" },
+      { "name": "NUI (Vue3/Scss)", "icon": "fab fa-html5" }
+    ],
+    "year": 2022,
+    "compatibility": ["altica"]
+  },
+  {
+    "id": "racing-editor",
+    "name": "Racing Editor",
+    "type": "fivem-script",
+    "category": "Interfaces",
+    "description": "Outil en jeu permettant aux joueurs (ou administrateurs) de créer, modifier et sauvegarder leurs propres circuits de course personnalisés.",
+    "features": [
+      "Interface NUI conviviale pour placer/déplacer les checkpoints et les props",
+      "Prévisualisation 3D du circuit en cours de création",
+      "Configuration des options de course (nom, type, véhicules autorisés, nombre de tours)",
+      "Sauvegarde et chargement des circuits créés (BDD ou fichier)",
+      "Partage de circuits avec d'autres joueurs (si implémenté)"
+    ],
+    "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Racing+Editor&fontsize=65",
+    "video": "",
+    "technologies": [
+      { "name": "Lua", "icon": "fas fa-code" },
+      { "name": "FiveM Natives", "icon": "fas fa-cloud" },
+      { "name": "NUI (Vue3/Scss)", "icon": "fab fa-html5" }
+    ],
+    "year": 2022,
+    "compatibility": ["altica"]
+  },
+  {
+    "id": "radio",
+    "name": "Radio",
+    "type": "fivem-script",
+    "category": "Interfaces",
+    "description": "Système de communication vocale par radio pour les joueurs, simulant des radios portables ou de véhicules avec gestion des fréquences.",
+    "features": [
+      "Interface NUI pour afficher/changer la fréquence radio",
+      "Support potentiel de double fréquence (écoute simultanée de deux canaux)",
+      "Effets sonores réalistes de radio (bips, grésillements)",
+      "Intégration avec les systèmes VOIP courants (Mumble/TokoVOIP/SaltyChat/Custom)"
+    ],
+    "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Radio&fontsize=70",
+    "video": "",
+    "technologies": [
+      { "name": "Lua", "icon": "fas fa-code" },
+      { "name": "FiveM Natives", "icon": "fas fa-cloud" },
+      { "name": "NUI (Vue3/Scss)", "icon": "fab fa-html5" }
+    ],
+    "year": 2022,
+    "compatibility": ["altica"]
+  },
+  {
+    "id": "casino",
+    "name": "Casino",
+    "type": "fivem-script",
+    "category": "Serveur",
+    "description": "Ajoute un casino fonctionnel avec divers jeux d'argent et de hasard (machines à sous, poker, blackjack, roulette) et un système de jetons.",
+    "features": [
+      "Plusieurs jeux de casino interactifs (blackjack, roulette, machines à sous, etc.)",
+      "Système de jetons de casino (achat/échange)",
+      "Gestion synchronisée des mises, gains et pertes entre les joueurs",
+      "PNJs croupiers/employés de casino (parfois interactifs)",
+      "Configuration des limites de mise et des taux de redistribution"
+    ],
+    "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Casino&fontsize=70",
+    "video": "",
+    "technologies": [
+      { "name": "Lua", "icon": "fas fa-code" },
+      { "name": "FiveM Natives", "icon": "fas fa-cloud" }
+    ],
+    "year": 2022,
+    "compatibility": ["altica"]
+  },
+  {
+    "id": "i18n",
+    "name": "I18n",
+    "type": "fivem-script",
+    "category": "Serveur",
+    "description": "Bibliothèque ou système utilitaire permettant de gérer facilement la traduction (internationalisation) des textes du serveur et des scripts en plusieurs langues.",
+    "features": [
+      "Support multi-langues via fichiers de configuration dédiés (JSON, Lua table)",
+      "Fonction simple pour récupérer une chaîne de caractères dans la langue du joueur",
+      "Facilite la maintenance et l'ajout de nouvelles langues"
+    ],
+    "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=I18n&fontsize=70",
+    "video": "",
+    "technologies": [
+      { "name": "Lua", "icon": "fas fa-code" },
+      { "name": "FiveM Natives", "icon": "fas fa-cloud" }
+    ],
+    "year": 2022,
+    "compatibility": ["altica"]
+  },
+  {
+    "id": "property",
+    "name": "Property",
+    "type": "fivem-script",
+    "category": "Serveur",
+    "description": "Système permettant aux joueurs d'acheter, vendre, et gérer des propriétés immobilières (maisons, appartements, garages) avec stockage et personnalisation.",
+    "features": [
+      "Achat/vente de propriétés via interface ou marqueur",
+      "Système de clés pour donner accès à d'autres joueurs",
+      "Inventaire de stockage personnel dans la propriété",
+      "Garde-robe pour changer et sauvegarder ses tenues",
+      "Système de garage pour stocker les véhicules personnels",
+      "Gestion des intérieurs (IPL natifs ou 'shells' MLO personnalisés)"
+    ],
+    "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Property&fontsize=70",
+    "video": "",
+    "technologies": [
+      { "name": "Lua", "icon": "fas fa-code" },
+      { "name": "FiveM Natives", "icon": "fas fa-cloud" }
+    ],
+    "year": 2022,
+    "compatibility": ["altica"]
+  },
+  {
+    "id": "server-queue",
+    "name": "Server Queue",
+    "type": "fivem-script",
+    "category": "Serveur",
+    "description": "Gère la connexion des joueurs lorsque le serveur est plein, en les plaçant dans une file d'attente virtuelle avec informations et priorités.",
+    "features": [
+      "Système de priorité configurable (ex: staff, whitelist)",
+      "Message d'accueil et informations personnalisables pendant l'attente",
+      "Protection contre le spam de connexion ou le contournement de la file",
+      "Connexion automatique lorsque une place se libère"
+    ],
+    "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Server+Queue&fontsize=65",
+    "video": "",
+    "technologies": [
+      { "name": "Lua", "icon": "fas fa-code" },
+      { "name": "FiveM Natives", "icon": "fas fa-cloud" }
+    ],
+    "year": 2022,
+    "compatibility": ["altica"]
+  },
+  {
+    "id": "radio-car",
+    "name": "Radio Car",
+    "type": "fivem-script",
+    "category": "Vehicule",
+    "description": "Permet aux joueurs d'écouter des stations de radio personnalisées directement dans les véhicules.",
+    "features": ["Ajout de stations de radio personnalisées"],
+    "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Radio+Car&fontsize=70",
+    "video": "",
+    "technologies": [
+      { "name": "Lua", "icon": "fas fa-code" },
+      { "name": "FiveM Natives", "icon": "fas fa-cloud" },
+      { "name": "NUI (HTML/CSS/JS)", "icon": "fab fa-html5" }
+    ],
+    "year": 2022,
+    "compatibility": ["altica"]
+  },
+  {
+    "id": "vehicle-foodtruck",
+    "name": "Vehicle Foodtruck",
+    "type": "fivem-script",
+    "category": "Vehicule",
+    "description": "Permet d'utiliser des véhicules spécifiques (foodtrucks) comme des points de vente mobiles de nourriture et de boissons.",
+    "features": [
+      "Nécessite de 'déployer' le foodtruck pour ouvrir le commerce (animation)",
+      "Interface pour le propriétaire pour gérer le stock et les prix",
+      "Inventaire spécifique pour le foodtruck (stock de produits)",
+      "Système de craft ou de réapprovisionnement pour le propriétaire"
+    ],
+    "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Vehicle+Foodtruck&fontsize=55",
+    "video": "",
+    "technologies": [
+      { "name": "Lua", "icon": "fas fa-code" },
+      { "name": "FiveM Natives", "icon": "fas fa-cloud" }
+    ],
+    "year": 2022,
+    "compatibility": ["altica"]
+  },
+  {
+    "id": "golf",
+    "name": "Golf",
+    "type": "fivem-script",
+    "category": "Activité",
+    "description": "Recrée l'activité de mini-jeu de golf de GTA V pour le multijoueur FiveM, permettant aux joueurs de s'affronter sur le parcours.",
+    "features": [
+      "Interface original pour contrôler la force et la direction du tir",
+      "Synchronisation de la position de la balle entre les joueurs",
+      "Système de points basé sur le Par, comme dans le jeu original",
+      "Support de plusieurs joueurs sur le même parcours"
+    ],
+    "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Golf&fontsize=70",
+    "video": "",
+    "technologies": [
+      { "name": "Lua", "icon": "fas fa-code" },
+      { "name": "FiveM Natives", "icon": "fas fa-cloud" }
+    ],
+    "year": 2022,
+    "compatibility": ["altica"]
+  },
+  {
+    "id": "paintball",
+    "name": "Paintball",
+    "type": "fivem-script",
+    "category": "Activité",
+    "description": "Met en place une activité de paintball complète avec des arènes dédiées, des équipes, un système de score et un équipement spécifique.",
+    "features": [
+      "Système de lobby pour rejoindre ou créer une partie",
+      "Choix des équipes et de l'arène de jeu",
+      "Armes de paintball personnalisées (visuel, son, dégâts non létaux)",
+      "Système de points (éliminations, objectifs)",
+      "Interface NUI affichant le score, le temps restant, les équipes",
+      "Zones de jeu délimitées avec respawn rapide"
+    ],
+    "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Paintball&fontsize=70",
+    "video": "",
+    "technologies": [
+      { "name": "Lua", "icon": "fas fa-code" },
+      { "name": "FiveM Natives", "icon": "fas fa-cloud" },
+      { "name": "NUI (Vue3/Scss)", "icon": "fab fa-html5" }
+    ],
+    "year": 2022,
+    "compatibility": ["altica"]
+  },
+  {
+    "id": "water-bombe",
+    "name": "Water Bombe",
+    "type": "fivem-script",
+    "category": "Serveur",
+    "description": "Permet aux joueurs pilotant certains types d'avions (ex: bombardiers, Duster modifié) de larguer des bombes (à eau ou potentiellement explosives) sur une cible.",
+    "features": [
+      "Activation du largage via commande ou touche assignée",
+      "Effets visuels et sonores de l'impact (splash pour l'eau, explosion)",
+      "Restrictions possibles par type d'avion, métier, ou item requis"
+    ],
+    "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Water+Bombe&fontsize=70",
+    "video": "",
+    "technologies": [
+      { "name": "Lua", "icon": "fas fa-code" },
+      { "name": "FiveM Natives", "icon": "fas fa-cloud" }
+    ],
+    "year": 2024,
+    "compatibility": ["standalone"]
+  },
+  {
+    "id": "flatbed",
+    "name": "Flatbed",
+    "type": "fivem-script",
+    "category": "Serveur",
+    "description": "Permet de contrôler de manière réaliste la rampe/plateforme arrière des camions dépanneurs de type 'Flatbed' pour charger et transporter des véhicules.",
+    "features": [
+      "Contrôle de la montée/descente de la plateforme via commandes ou touches",
+      "Animations réalistes et synchronisées de la plateforme",
+      "Possibilité d'attacher/détacher solidement un véhicule sur la plateforme",
+      "Compatible avec les modèles de Flatbed natifs ou add-on"
+    ],
+    "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Flatbed&fontsize=70",
+    "video": "",
+    "technologies": [
+      { "name": "Lua", "icon": "fas fa-code" },
+      { "name": "FiveM Natives", "icon": "fas fa-cloud" }
+    ],
+    "year": 2024,
+    "compatibility": ["standalone"]
+  },
+  {
+    "id": "fire",
+    "name": "Feu",
+    "type": "fivem-script",
+    "category": "Serveur",
+    "description": "Système avancé de gestion des incendies, permettant de déclencher des feux, de les voir se propager de manière réaliste et de les éteindre avec l'équipement approprié.",
+    "features": [
+      "Propagation dynamique du feu influencée par la météo (vent) et les matériaux à proximité",
+      "Système d'extinction utilisant des extincteurs ou des lances à incendie (véhicules pompiers)",
+      "Effets visuels (flammes, fumée) et sonores immersifs",
+      "Dégâts aux joueurs, véhicules et potentiellement à l'environnement",
+      "Commandes administrateur pour démarrer/arrêter des feux pour des scénarios"
+    ],
+    "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Feu&fontsize=70",
+    "video": "",
+    "technologies": [
+      { "name": "Lua", "icon": "fas fa-code" },
+      { "name": "FiveM Natives", "icon": "fas fa-cloud" }
+    ],
+    "year": 2024,
+    "compatibility": ["standalone"]
+  }
+]

@@ -9,7 +9,11 @@
       </router-view>
     </transition>
 
-    <AudioPlayer />
+    <div v-if="isLoading" class="absolute inset-0 flex justify-center items-center bg-black bg-opacity-90">
+      <div class="font-mono text-purple-400 text-xl animate-pulse">
+        C:\> {{ router.currentRoute.value.path === '/' ? 'home' : router.currentRoute.value.path.slice(1) }} ...
+      </div>
+    </div>
 
     <Footer v-if="!isLoading" />
   </div>
@@ -19,11 +23,10 @@
 import { ref, computed } from 'vue';
 import { useRouter } from 'vue-router';
 
-import BackgroundImage from './assets/images/background.jpg';
+import BackgroundImage from '@assets/images/background.png';
 
-import Header from './components/Header.vue';
-import Footer from './components/Footer.vue';
-import AudioPlayer from './components/AudioPlayer.vue';
+import Header from '@components/Header.vue';
+import Footer from '@components/Footer.vue';
 
 const router = useRouter();
 const isLoading = ref(false);

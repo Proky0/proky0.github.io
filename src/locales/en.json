@@ -1,0 +1,64 @@
+{
+  "header": {
+    "home": "Home",
+    "projects": "Projects",
+    "scripts": "Scripts",
+    "contact": "Contact",
+    "docs": "DOCS"
+  },
+  "hero": {
+    "title": "FIVEM PORTFOLIO",
+    "subtitle": "> Full-Stack Developer specialized in the FiveM ecosystem",
+    "description": "Custom script creation • Optimization • Innovative UI/UX",
+    "cta": "EXPLORE MY PROJECTS"
+  },
+  "projectDetails": {
+    "backToProjects": "Back to projects",
+    "projectNotFound": "Project not found",
+    "noDescription": "No description available.",
+    "videoNotAvailable": "Video not available",
+    "photoNotAvailable": "Photo not available",
+    "projectGallery": "Project Gallery",
+    "technicalDetails": "Technical Details",
+    "links": "Links",
+    "github": "GitHub",
+    "tebexStore": "Tebex Store",
+    "documentation": "Documentation"
+  },
+  "projectsList": {
+    "viewDetails": "View Details",
+    "gitHubRepo": "GitHub Repository",
+    "tebexStore": "Tebex Store",
+    "downloads": "Downloads"
+  },
+  "scriptsList": {
+    "searchPlaceholder": "Search for a script...",
+    "allCategories": "All categories",
+    "allFrameworks": "All frameworks",
+    "scripts": "Scripts",
+    "categories": "Categories",
+    "frameworks": "Frameworks",
+    "features": "Features"
+  },
+  "contact": {
+    "discordTitle": "Discord",
+    "discordDescription": "Join my server to chat",
+    "copyUsername": "Click to copy",
+    "githubTitle": "GitHub",
+    "githubDescription": "My open-source FiveM projects",
+    "fivemTitle": "FiveM",
+    "fivemDescription": "My resources and scripts",
+    "twitterTitle": "Twitter/X",
+    "twitterDescription": "My announcements and updates"
+  },
+  "footer": {
+    "copyright": "© {year} FiveM Script Archive. All rights reserved.",
+    "backToTop": "Back to top"
+  },
+  "social": {
+    "discord": "Discord",
+    "github": "GitHub",
+    "twitter": "Twitter",
+    "fivem": "FiveM Forum"
+  }
+}
