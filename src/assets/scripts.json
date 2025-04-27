@@ -330,28 +330,6 @@
     "compatibility": ["altica"]
   },
   {
-    "id": "marker",
-    "name": "Marker",
-    "type": "fivem-script",
-    "category": "Serveur",
-    "description": "Script utilitaire pour créer et gérer des marqueurs visuels (cercles, cylindres, flèches, points d'aide) dans le monde du jeu, souvent utilisés pour indiquer des points d'interaction.",
-    "features": [
-      "Création de marqueurs 3D de différents types, tailles et couleurs",
-      "Affichage de texte d'aide contextuel ('Appuyez sur E pour...')",
-      "Association d'une action/callback lors de l'interaction (touche E)",
-      "Affichage conditionnel basé sur la distance etc.",
-      "Optimisation pour gérer un grand nombre de marqueurs sans impacter les performances"
-    ],
-    "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Marker&fontsize=70",
-    "video": "",
-    "technologies": [
-      { "name": "Lua", "icon": "fas fa-code" },
-      { "name": "FiveM Natives", "icon": "fas fa-cloud" }
-    ],
-    "year": 2022,
-    "compatibility": ["altica"]
-  },
-  {
     "id": "property",
     "name": "Property",
     "type": "fivem-script",
@@ -533,27 +511,6 @@
       "Commandes administrateur pour démarrer/arrêter des feux pour des scénarios"
     ],
     "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Feu&fontsize=70",
-    "video": "",
-    "technologies": [
-      { "name": "Lua", "icon": "fas fa-code" },
-      { "name": "FiveM Natives", "icon": "fas fa-cloud" }
-    ],
-    "year": 2024,
-    "compatibility": ["standalone"]
-  },
-  {
-    "id": "kramer-and-the-the",
-    "name": "Événement Kramer and the The",
-    "type": "fivem-script",
-    "category": "Evenement",
-    "description": "Script pour mettre en place un événement spécifique inspiré de 'Kramer and the The', probablement axé sur la création et le contrôle de projecteurs (spotlights) pour des scènes ou spectacles.",
-    "features": [
-      "Création et placement de projecteurs (spotlights) dans le monde",
-      "Contrôle de la couleur, de l'intensité",
-      "Activation/désactivation via commandes, triggers ou interface",
-      "Synchronisation des effets lumineux entre tous les joueurs"
-    ],
-    "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Kramer+Event&fontsize=65",
     "video": "",
     "technologies": [
       { "name": "Lua", "icon": "fas fa-code" },
