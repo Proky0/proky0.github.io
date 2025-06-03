@@ -1,4 +1,4 @@
-import './main.scss';
+import './main.css';
 import 'swiper/swiper-bundle.css';
 
 import { createApp } from 'vue';
