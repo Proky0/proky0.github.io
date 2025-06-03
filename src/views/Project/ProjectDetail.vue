@@ -46,9 +46,9 @@
           <div v-else class="bg-gray-900/70 border border-pink-400/20 rounded-xl overflow-hidden">
             <div class="aspect-h-9 aspect-w-16">
               <img
-                v-if="project?.preview"
-                :src="project?.preview"
-                :alt="project?.preview"
+                v-if="project?.cover"
+                :src="project?.cover"
+                :alt="project?.cover"
                 class="w-full h-full object-cover"
               />
               <div v-else class="flex flex-col justify-center items-center bg-gray-800/50 h-full text-pink-400">
@@ -83,13 +83,13 @@
             </div>
           </div>
 
-          <div v-if="project?.details" class="bg-gray-900/70 p-6 border border-gray-700 rounded-xl">
+          <div v-if="project.detail" class="bg-gray-900/70 p-6 border border-gray-700 rounded-xl">
             <h2 class="flex items-center mb-6 font-bold text-pink-400 text-2xl">
               <i class="mr-3 fas fa-info-circle"></i>
               {{ $t('projectDetails.technicalDetails') }}
             </h2>
             <div class="prose-invert max-w-none prose">
-              <p v-for="(detail, index) in project.details" :key="index" class="mb-4 last:mb-0">
+              <p v-for="(detail, index) in project.detail" :key="index" class="mb-4 last:mb-0">
                 {{ detail }}
               </p>
             </div>
@@ -115,7 +115,7 @@
           </div>
 
           <div
-            v-if="project?.github || project?.tebex || project?.documentation"
+            v-if="project?.github || project?.tebex"
             class="space-y-4 bg-gray-900/70 p-6 border border-pink-400/20 rounded-xl"
           >
             <h2 class="flex items-center mb-2 font-bold text-pink-400 text-xl">
@@ -143,18 +143,6 @@
               <div class="flex items-center">
                 <i class="mr-3 text-gray-300 text-xl fas fa-shopping-cart"></i>
                 <span>{{ $t('projectDetails.tebexStore') }}</span>
-              </div>
-              <i class="fa-chevron-right text-gray-400 fas"></i>
-            </a>
-            <a
-              v-if="project?.documentation"
-              :href="project.documentation"
-              target="_blank"
-              class="flex justify-between items-center bg-gray-800 hover:bg-gray-700 px-4 py-3 rounded-lg transition-colors"
-            >
-              <div class="flex items-center">
-                <i class="mr-3 text-gray-300 text-xl fas fa-book"></i>
-                <span>{{ $t('projectDetails.documentation') }}</span>
               </div>
               <i class="fa-chevron-right text-gray-400 fas"></i>
             </a>
@@ -204,20 +192,24 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
 import { useRouter, useRoute } from 'vue-router';
-import projects from '@assets/projects.json';
+import file from '@assets/projects.json';
+
+const projects = file as Project[];
 
 const router = useRouter();
 const route = useRoute();
 
 // Get project data
-const project = projects.find((p) => p.id === Number(route.params.id));
+const project = computed(() => {
+  return projects.find((p) => p.id === Number(route.params.id));
+});
 
 // Lightbox functionality
 const lightboxImage = ref('');
 const currentImageIndex = ref(0);
 
 const openLightbox = (image: string): void => {
-  currentImageIndex.value = project?.images?.indexOf(image) || 0;
+  currentImageIndex.value = project.value?.images?.indexOf(image) || 0;
   lightboxImage.value = image;
 };
 
@@ -226,34 +218,31 @@ const closeLightbox = (): void => {
 };
 
 const hasPreviousImage = computed(() => {
-  return project?.images && currentImageIndex.value > 0;
+  return project.value?.images && currentImageIndex.value > 0;
 });
 
 const hasNextImage = computed(() => {
-  return project?.images && currentImageIndex.value < project.images.length - 1;
+  return project.value?.images && currentImageIndex.value < project.value?.images.length - 1;
 });
 
 const showPreviousImage = (): void => {
-  if (hasPreviousImage.value && project?.images) {
+  if (hasPreviousImage.value && project.value?.images) {
     currentImageIndex.value--;
-    lightboxImage.value = project.images[currentImageIndex.value];
+    lightboxImage.value = project.value.images[currentImageIndex.value];
   }
 };
 
 const showNextImage = (): void => {
-  if (hasNextImage.value && project?.images) {
+  if (hasNextImage.value && project.value?.images) {
     currentImageIndex.value++;
-    lightboxImage.value = project.images[currentImageIndex.value];
+    lightboxImage.value = project.value.images[currentImageIndex.value];
   }
 };
 
 // Navigation
 const goBack = (): void => {
-  if (window.history.length > 1) {
-    router.go(-1);
-  } else {
-    router.push('/projects');
-  }
+  if (window.history.length > 1) return router.go(-1);
+  router.push('/projects');
 };
 </script>
 
