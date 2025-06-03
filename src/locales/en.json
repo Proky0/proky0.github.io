@@ -4,13 +4,14 @@
     "projects": "Projects",
     "scripts": "Scripts",
     "contact": "Contact",
-    "docs": "DOCS"
+    "about": "About"
   },
   "hero": {
     "title": "FIVEM PORTFOLIO",
     "subtitle": "> Full-Stack Developer specialized in the FiveM ecosystem",
     "description": "Custom script creation • Optimization • Innovative UI/UX",
-    "cta": "EXPLORE MY PROJECTS"
+    "cta": "EXPLORE MY PROJECTS",
+    "aboutMe": "ABOUT ME"
   },
   "projectDetails": {
     "backToProjects": "Back to projects",

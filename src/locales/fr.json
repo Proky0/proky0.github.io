@@ -4,13 +4,14 @@
     "projects": "Projets",
     "scripts": "Scripts",
     "contact": "Contact",
-    "docs": "DOCS"
+    "about": "À propos"
   },
   "hero": {
-    "title": "PORTFOLIO FIVEM",
+    "title": "PORTFOLIO",
     "subtitle": "> Développeur Full-Stack spécialisé dans l'écosystème FiveM",
     "description": "Création de scripts sur-mesure • Optimisation • UI/UX innovantes",
-    "cta": "EXPLORER MES PROJETS"
+    "cta": "EXPLORER MES PROJETS",
+    "aboutMe": "À PROPOS DE MOI"
   },
   "projectDetails": {
     "backToProjects": "Retour aux projets",

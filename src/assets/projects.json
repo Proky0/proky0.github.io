@@ -127,6 +127,52 @@
   },
   {
     "id": 7,
+    "name": "CaliRP",
+    "description": "Un serveur de jeu de rôle dans Los Santos. Explorez la ville, interagissez avec d'autres joueurs et vivez des aventures uniques.",
+    "cover": "https://place-hold.it/800x450/0d0d0d/ffffff?text=CaliRP&fontsize=70",
+    "images": [],
+    "technologies": [
+      {
+        "name": "Lua",
+        "icon": "fab fa-js"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "21 JumpClick",
+    "description": "Un serveur de jeu de rôle dans Los Santos. Explorez la ville, interagissez avec d'autres joueurs et vivez des aventures uniques.",
+    "cover": "https://place-hold.it/800x450/0d0d0d/ffffff?text=21+JumpClick&fontsize=70",
+    "images": [],
+    "technologies": [
+      {
+        "name": "Lua",
+        "icon": "fab fa-js"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "fab fa-js"
+      },
+      {
+        "name": "Vue3",
+        "icon": "fa-brands fa-html5"
+      },
+      {
+        "name": "Svelte",
+        "icon": "fa-brands fa-html5"
+      },
+      {
+        "name": "Tailwind CSS",
+        "icon": "fa-brands fa-css3"
+      },
+      {
+        "name": "MySQL",
+        "icon": "fas fa-database"
+      }
+    ]
+  },
+  {
+    "id": 9,
     "name": "Open Space",
     "description": "Un jeu de rôle inspiré de 'The Office' avec une touche mortelle : un tueur se cache parmi les employés de bureau. Survivez à votre journée de travail tout en démasquant le meurtrier.",
     "cover": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Open+Space&fontsize=70",

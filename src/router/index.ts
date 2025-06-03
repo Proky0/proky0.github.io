@@ -12,9 +12,11 @@ import ContactView from '@views/ContactView.vue';
 
 /* Scripts View */
 import ScriptsView from '@views/Script/ScriptsView.vue';
+import AboutView from '@/views/AboutView.vue';
 
 const routes = [
   { path: '/', component: HomeView },
+  { path: '/about', component: AboutView },
   { path: '/projects', component: ProjectsView },
   { path: '/projects/:id', component: ProjectDetail, props: true }, // Dynamic route
   { path: '/contact', component: ContactView },
@@ -24,9 +26,7 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes,
-  scrollBehavior(_to, _from, savedPosition) {
-    return savedPosition || { top: 0 };
-  }
+  scrollBehavior(_to, _from, savedPosition) { return savedPosition || { top: 0 } }
 });
 
 export default router;

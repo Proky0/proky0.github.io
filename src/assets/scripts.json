@@ -14,12 +14,23 @@
     "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Character+Clothes&fontsize=60",
     "video": "",
     "technologies": [
-      { "name": "Lua", "icon": "fas fa-code" },
-      { "name": "FiveM Natives", "icon": "fas fa-cloud" },
-      { "name": "NUI (Vue3/Scss)", "icon": "fab fa-html5" }
+      {
+        "name": "Lua",
+        "icon": "fas fa-code"
+      },
+      {
+        "name": "FiveM Natives",
+        "icon": "fas fa-cloud"
+      },
+      {
+        "name": "NUI (Vue3/Scss)",
+        "icon": "fab fa-html5"
+      }
     ],
     "year": 2022,
-    "compatibility": ["altica"]
+    "compatibility": [
+      "altica"
+    ]
   },
   {
     "id": "lucky-wheel",
@@ -36,11 +47,19 @@
     "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Lucky+Wheel&fontsize=70",
     "video": "",
     "technologies": [
-      { "name": "Lua", "icon": "fas fa-code" },
-      { "name": "FiveM Natives", "icon": "fas fa-cloud" }
+      {
+        "name": "Lua",
+        "icon": "fas fa-code"
+      },
+      {
+        "name": "FiveM Natives",
+        "icon": "fas fa-cloud"
+      }
     ],
     "year": 2022,
-    "compatibility": ["altica"]
+    "compatibility": [
+      "altica"
+    ]
   },
   {
     "id": "inventory-drop",
@@ -58,11 +77,19 @@
     "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Inventory+Drop&fontsize=65",
     "video": "",
     "technologies": [
-      { "name": "Lua", "icon": "fas fa-code" },
-      { "name": "FiveM Natives", "icon": "fas fa-cloud" }
+      {
+        "name": "Lua",
+        "icon": "fas fa-code"
+      },
+      {
+        "name": "FiveM Natives",
+        "icon": "fas fa-cloud"
+      }
     ],
     "year": 2022,
-    "compatibility": ["altica"]
+    "compatibility": [
+      "altica"
+    ]
   },
   {
     "id": "inventory-manager",
@@ -79,12 +106,23 @@
     "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Inventory+Manager&fontsize=60",
     "video": "",
     "technologies": [
-      { "name": "Lua", "icon": "fas fa-code" },
-      { "name": "FiveM Natives", "icon": "fas fa-cloud" },
-      { "name": "NUI (Vue3/Scss)", "icon": "fab fa-html5" }
+      {
+        "name": "Lua",
+        "icon": "fas fa-code"
+      },
+      {
+        "name": "FiveM Natives",
+        "icon": "fas fa-cloud"
+      },
+      {
+        "name": "NUI (Vue3/Scss)",
+        "icon": "fab fa-html5"
+      }
     ],
     "year": 2022,
-    "compatibility": ["altica"]
+    "compatibility": [
+      "altica"
+    ]
   },
   {
     "id": "property-creator",
@@ -102,11 +140,19 @@
     "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Property+Creator&fontsize=60",
     "video": "",
     "technologies": [
-      { "name": "Lua", "icon": "fas fa-code" },
-      { "name": "FiveM Natives", "icon": "fas fa-cloud" }
+      {
+        "name": "Lua",
+        "icon": "fas fa-code"
+      },
+      {
+        "name": "FiveM Natives",
+        "icon": "fas fa-cloud"
+      }
     ],
     "year": 2022,
-    "compatibility": ["altica"]
+    "compatibility": [
+      "altica"
+    ]
   },
   {
     "id": "card",
@@ -123,12 +169,23 @@
     "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Card&fontsize=70",
     "video": "",
     "technologies": [
-      { "name": "Lua", "icon": "fas fa-code" },
-      { "name": "FiveM Natives", "icon": "fas fa-cloud" },
-      { "name": "NUI (Vue3/Scss)", "icon": "fab fa-html5" }
+      {
+        "name": "Lua",
+        "icon": "fas fa-code"
+      },
+      {
+        "name": "FiveM Natives",
+        "icon": "fas fa-cloud"
+      },
+      {
+        "name": "NUI (Vue3/Scss)",
+        "icon": "fab fa-html5"
+      }
     ],
     "year": 2022,
-    "compatibility": ["altica"]
+    "compatibility": [
+      "altica"
+    ]
   },
   {
     "id": "coma",
@@ -147,12 +204,23 @@
     "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Coma&fontsize=70",
     "video": "",
     "technologies": [
-      { "name": "Lua", "icon": "fas fa-code" },
-      { "name": "FiveM Natives", "icon": "fas fa-cloud" },
-      { "name": "NUI (HTML/CSS/JS)", "icon": "fab fa-html5" }
+      {
+        "name": "Lua",
+        "icon": "fas fa-code"
+      },
+      {
+        "name": "FiveM Natives",
+        "icon": "fas fa-cloud"
+      },
+      {
+        "name": "NUI (HTML/CSS/JS)",
+        "icon": "fab fa-html5"
+      }
     ],
     "year": 2022,
-    "compatibility": ["altica"]
+    "compatibility": [
+      "altica"
+    ]
   },
   {
     "id": "dui",
@@ -169,11 +237,19 @@
     "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=DUI+Framework&fontsize=60",
     "video": "",
     "technologies": [
-      { "name": "Lua", "icon": "fas fa-code" },
-      { "name": "FiveM Natives", "icon": "fas fa-cloud" }
+      {
+        "name": "Lua",
+        "icon": "fas fa-code"
+      },
+      {
+        "name": "FiveM Natives",
+        "icon": "fas fa-cloud"
+      }
     ],
     "year": 2022,
-    "compatibility": ["altica"]
+    "compatibility": [
+      "altica"
+    ]
   },
   {
     "id": "election",
@@ -189,12 +265,23 @@
     "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Election&fontsize=70",
     "video": "",
     "technologies": [
-      { "name": "Lua", "icon": "fas fa-code" },
-      { "name": "FiveM Natives", "icon": "fas fa-cloud" },
-      { "name": "NUI (Vue3/Scss)", "icon": "fab fa-html5" }
+      {
+        "name": "Lua",
+        "icon": "fas fa-code"
+      },
+      {
+        "name": "FiveM Natives",
+        "icon": "fas fa-cloud"
+      },
+      {
+        "name": "NUI (Vue3/Scss)",
+        "icon": "fab fa-html5"
+      }
     ],
     "year": 2022,
-    "compatibility": ["altica"]
+    "compatibility": [
+      "altica"
+    ]
   },
   {
     "id": "invoice",
@@ -212,12 +299,23 @@
     "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Facture&fontsize=70",
     "video": "",
     "technologies": [
-      { "name": "Lua", "icon": "fas fa-code" },
-      { "name": "FiveM Natives", "icon": "fas fa-cloud" },
-      { "name": "NUI (Vue3/Scss)", "icon": "fab fa-html5" }
+      {
+        "name": "Lua",
+        "icon": "fas fa-code"
+      },
+      {
+        "name": "FiveM Natives",
+        "icon": "fas fa-cloud"
+      },
+      {
+        "name": "NUI (Vue3/Scss)",
+        "icon": "fab fa-html5"
+      }
     ],
     "year": 2022,
-    "compatibility": ["altica"]
+    "compatibility": [
+      "altica"
+    ]
   },
   {
     "id": "racing",
@@ -235,12 +333,23 @@
     "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Racing&fontsize=70",
     "video": "",
     "technologies": [
-      { "name": "Lua", "icon": "fas fa-code" },
-      { "name": "FiveM Natives", "icon": "fas fa-cloud" },
-      { "name": "NUI (Vue3/Scss)", "icon": "fab fa-html5" }
+      {
+        "name": "Lua",
+        "icon": "fas fa-code"
+      },
+      {
+        "name": "FiveM Natives",
+        "icon": "fas fa-cloud"
+      },
+      {
+        "name": "NUI (Vue3/Scss)",
+        "icon": "fab fa-html5"
+      }
     ],
     "year": 2022,
-    "compatibility": ["altica"]
+    "compatibility": [
+      "altica"
+    ]
   },
   {
     "id": "racing-editor",
@@ -258,12 +367,23 @@
     "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Racing+Editor&fontsize=65",
     "video": "",
     "technologies": [
-      { "name": "Lua", "icon": "fas fa-code" },
-      { "name": "FiveM Natives", "icon": "fas fa-cloud" },
-      { "name": "NUI (Vue3/Scss)", "icon": "fab fa-html5" }
+      {
+        "name": "Lua",
+        "icon": "fas fa-code"
+      },
+      {
+        "name": "FiveM Natives",
+        "icon": "fas fa-cloud"
+      },
+      {
+        "name": "NUI (Vue3/Scss)",
+        "icon": "fab fa-html5"
+      }
     ],
     "year": 2022,
-    "compatibility": ["altica"]
+    "compatibility": [
+      "altica"
+    ]
   },
   {
     "id": "radio",
@@ -280,12 +400,23 @@
     "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Radio&fontsize=70",
     "video": "",
     "technologies": [
-      { "name": "Lua", "icon": "fas fa-code" },
-      { "name": "FiveM Natives", "icon": "fas fa-cloud" },
-      { "name": "NUI (Vue3/Scss)", "icon": "fab fa-html5" }
+      {
+        "name": "Lua",
+        "icon": "fas fa-code"
+      },
+      {
+        "name": "FiveM Natives",
+        "icon": "fas fa-cloud"
+      },
+      {
+        "name": "NUI (Vue3/Scss)",
+        "icon": "fab fa-html5"
+      }
     ],
     "year": 2022,
-    "compatibility": ["altica"]
+    "compatibility": [
+      "altica"
+    ]
   },
   {
     "id": "casino",
@@ -303,11 +434,19 @@
     "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Casino&fontsize=70",
     "video": "",
     "technologies": [
-      { "name": "Lua", "icon": "fas fa-code" },
-      { "name": "FiveM Natives", "icon": "fas fa-cloud" }
+      {
+        "name": "Lua",
+        "icon": "fas fa-code"
+      },
+      {
+        "name": "FiveM Natives",
+        "icon": "fas fa-cloud"
+      }
     ],
     "year": 2022,
-    "compatibility": ["altica"]
+    "compatibility": [
+      "altica"
+    ]
   },
   {
     "id": "i18n",
@@ -323,11 +462,19 @@
     "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=I18n&fontsize=70",
     "video": "",
     "technologies": [
-      { "name": "Lua", "icon": "fas fa-code" },
-      { "name": "FiveM Natives", "icon": "fas fa-cloud" }
+      {
+        "name": "Lua",
+        "icon": "fas fa-code"
+      },
+      {
+        "name": "FiveM Natives",
+        "icon": "fas fa-cloud"
+      }
     ],
     "year": 2022,
-    "compatibility": ["altica"]
+    "compatibility": [
+      "altica"
+    ]
   },
   {
     "id": "property",
@@ -346,11 +493,19 @@
     "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Property&fontsize=70",
     "video": "",
     "technologies": [
-      { "name": "Lua", "icon": "fas fa-code" },
-      { "name": "FiveM Natives", "icon": "fas fa-cloud" }
+      {
+        "name": "Lua",
+        "icon": "fas fa-code"
+      },
+      {
+        "name": "FiveM Natives",
+        "icon": "fas fa-cloud"
+      }
     ],
     "year": 2022,
-    "compatibility": ["altica"]
+    "compatibility": [
+      "altica"
+    ]
   },
   {
     "id": "server-queue",
@@ -367,11 +522,19 @@
     "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Server+Queue&fontsize=65",
     "video": "",
     "technologies": [
-      { "name": "Lua", "icon": "fas fa-code" },
-      { "name": "FiveM Natives", "icon": "fas fa-cloud" }
+      {
+        "name": "Lua",
+        "icon": "fas fa-code"
+      },
+      {
+        "name": "FiveM Natives",
+        "icon": "fas fa-cloud"
+      }
     ],
     "year": 2022,
-    "compatibility": ["altica"]
+    "compatibility": [
+      "altica"
+    ]
   },
   {
     "id": "radio-car",
@@ -379,16 +542,25 @@
     "type": "fivem-script",
     "category": "Vehicule",
     "description": "Permet aux joueurs d'écouter des stations de radio personnalisées directement dans les véhicules.",
-    "features": ["Ajout de stations de radio personnalisées"],
+    "features": [
+      "Ajout de stations de radio personnalisées"
+    ],
     "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Radio+Car&fontsize=70",
     "video": "",
     "technologies": [
-      { "name": "Lua", "icon": "fas fa-code" },
-      { "name": "FiveM Natives", "icon": "fas fa-cloud" },
-      { "name": "NUI (HTML/CSS/JS)", "icon": "fab fa-html5" }
+      {
+        "name": "Lua",
+        "icon": "fas fa-code"
+      },
+      {
+        "name": "FiveM Natives",
+        "icon": "fas fa-cloud"
+      }
     ],
     "year": 2022,
-    "compatibility": ["altica"]
+    "compatibility": [
+      "altica"
+    ]
   },
   {
     "id": "vehicle-foodtruck",
@@ -405,11 +577,19 @@
     "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Vehicle+Foodtruck&fontsize=55",
     "video": "",
     "technologies": [
-      { "name": "Lua", "icon": "fas fa-code" },
-      { "name": "FiveM Natives", "icon": "fas fa-cloud" }
+      {
+        "name": "Lua",
+        "icon": "fas fa-code"
+      },
+      {
+        "name": "FiveM Natives",
+        "icon": "fas fa-cloud"
+      }
     ],
     "year": 2022,
-    "compatibility": ["altica"]
+    "compatibility": [
+      "altica"
+    ]
   },
   {
     "id": "golf",
@@ -426,11 +606,19 @@
     "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Golf&fontsize=70",
     "video": "",
     "technologies": [
-      { "name": "Lua", "icon": "fas fa-code" },
-      { "name": "FiveM Natives", "icon": "fas fa-cloud" }
+      {
+        "name": "Lua",
+        "icon": "fas fa-code"
+      },
+      {
+        "name": "FiveM Natives",
+        "icon": "fas fa-cloud"
+      }
     ],
     "year": 2022,
-    "compatibility": ["altica"]
+    "compatibility": [
+      "altica"
+    ]
   },
   {
     "id": "paintball",
@@ -449,18 +637,29 @@
     "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Paintball&fontsize=70",
     "video": "",
     "technologies": [
-      { "name": "Lua", "icon": "fas fa-code" },
-      { "name": "FiveM Natives", "icon": "fas fa-cloud" },
-      { "name": "NUI (Vue3/Scss)", "icon": "fab fa-html5" }
+      {
+        "name": "Lua",
+        "icon": "fas fa-code"
+      },
+      {
+        "name": "FiveM Natives",
+        "icon": "fas fa-cloud"
+      },
+      {
+        "name": "NUI (Vue3/Scss)",
+        "icon": "fab fa-html5"
+      }
     ],
     "year": 2022,
-    "compatibility": ["altica"]
+    "compatibility": [
+      "altica"
+    ]
   },
   {
     "id": "water-bombe",
     "name": "Water Bombe",
     "type": "fivem-script",
-    "category": "Serveur",
+    "category": "Vehicule",
     "description": "Permet aux joueurs pilotant certains types d'avions (ex: bombardiers, Duster modifié) de larguer des bombes (à eau ou potentiellement explosives) sur une cible.",
     "features": [
       "Activation du largage via commande ou touche assignée",
@@ -470,17 +669,25 @@
     "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Water+Bombe&fontsize=70",
     "video": "",
     "technologies": [
-      { "name": "Lua", "icon": "fas fa-code" },
-      { "name": "FiveM Natives", "icon": "fas fa-cloud" }
+      {
+        "name": "Lua",
+        "icon": "fas fa-code"
+      },
+      {
+        "name": "FiveM Natives",
+        "icon": "fas fa-cloud"
+      }
     ],
     "year": 2024,
-    "compatibility": ["standalone"]
+    "compatibility": [
+      "standalone"
+    ]
   },
   {
     "id": "flatbed",
     "name": "Flatbed",
     "type": "fivem-script",
-    "category": "Serveur",
+    "category": "Vehicule",
     "description": "Permet de contrôler de manière réaliste la rampe/plateforme arrière des camions dépanneurs de type 'Flatbed' pour charger et transporter des véhicules.",
     "features": [
       "Contrôle de la montée/descente de la plateforme via commandes ou touches",
@@ -491,11 +698,19 @@
     "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Flatbed&fontsize=70",
     "video": "",
     "technologies": [
-      { "name": "Lua", "icon": "fas fa-code" },
-      { "name": "FiveM Natives", "icon": "fas fa-cloud" }
+      {
+        "name": "Lua",
+        "icon": "fas fa-code"
+      },
+      {
+        "name": "FiveM Natives",
+        "icon": "fas fa-cloud"
+      }
     ],
     "year": 2024,
-    "compatibility": ["standalone"]
+    "compatibility": [
+      "standalone"
+    ]
   },
   {
     "id": "fire",
@@ -513,10 +728,50 @@
     "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Feu&fontsize=70",
     "video": "",
     "technologies": [
-      { "name": "Lua", "icon": "fas fa-code" },
-      { "name": "FiveM Natives", "icon": "fas fa-cloud" }
+      {
+        "name": "Lua",
+        "icon": "fas fa-code"
+      },
+      {
+        "name": "FiveM Natives",
+        "icon": "fas fa-cloud"
+      }
     ],
     "year": 2024,
-    "compatibility": ["standalone"]
+    "compatibility": [
+      "standalone"
+    ]
+  },
+  {
+    "id": "radio",
+    "name": "Radio Portatible",
+    "type": "fivem-script",
+    "category": "Interfaces",
+    "description": "Système avancé de gestion des incendies, permettant de déclencher des feux, de les voir se propager de manière réaliste et de les éteindre avec l'équipement approprié.",
+    "features": [
+      "Crée une radio portative pour les joueurs qui peuvent poser",
+      "Sync entre les joueurs pour entendre la radio",
+      "Possibilité de changer de station de la radio"
+    ],
+    "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Radio+Portatible&fontsize=70",
+    "video": "",
+    "technologies": [
+      {
+        "name": "Lua",
+        "icon": "fas fa-code"
+      },
+      {
+        "name": "Svelte",
+        "icon": "fas fa-code"
+      },
+      {
+        "name": "FiveM Natives",
+        "icon": "fas fa-cloud"
+      }
+    ],
+    "year": 2024,
+    "compatibility": [
+      "standalone"
+    ]
   }
 ]
