@@ -34,7 +34,7 @@ interface Script {
   preview: string;
   download: string;
   video: string;
-  technologies: Technology[];
+  technologies: Technologie[];
   year: number;
   downloads: number;
   compatibility: string[];
