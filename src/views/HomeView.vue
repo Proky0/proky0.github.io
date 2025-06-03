@@ -10,8 +10,7 @@
     <div class="z-10 relative flex flex-col justify-center items-center px-4 py-20 min-h-screen text-center">
       <h1 class="mb-6 font-bold text-5xl md:text-7xl tracking-tight">
         <span
-          class="bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 text-transparent animate-gradient"
-        >
+          class="bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 text-transparent animate-gradient">
           {{ $t('hero.title') }}
         </span>
       </h1>
@@ -25,18 +24,23 @@
         </p>
       </div>
 
-      <router-link
-        to="/projects"
-        class="group relative bg-gradient-to-r from-pink-600 hover:from-pink-500 to-purple-600 hover:to-purple-500 shadow-lg hover:shadow-pink-400/30 px-8 py-4 rounded-md overflow-hidden font-bold text-white tracking-wider transition-all duration-300"
-      >
-        <span class="z-10 relative">{{ $t('hero.cta') }}</span>
-        <span
-          class="absolute inset-0 bg-gradient-to-r from-pink-400 to-purple-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-        ></span>
-        <span
-          class="absolute -inset-2 border-2 border-pink-400/30 group-hover:border-pink-400/50 rounded-md transition-all animate-pulse duration-500"
-        ></span>
-      </router-link>
+      <div class="flex gap-6 justify-center">
+        <router-link to="/projects"
+          class="group relative px-8 py-3 rounded-lg font-medium text-white bg-gradient-to-br from-pink-500 to-purple-600 hover:scale-105 transition-all duration-200">
+          <span class="relative z-10">{{ $t('hero.cta') }}</span>
+          <div
+            class="absolute inset-0 w-full h-full bg-gradient-to-br from-pink-400 to-purple-500 rounded-lg blur opacity-50 group-hover:opacity-75 transition-opacity">
+          </div>
+        </router-link>
+
+        <router-link to="/about"
+          class="group relative px-8 py-3 rounded-lg font-medium text-white bg-gradient-to-br from-purple-500 to-blue-600 hover:scale-105 transition-all duration-200">
+          <span class="relative z-10">{{ $t('hero.aboutMe') }}</span>
+          <div
+            class="absolute inset-0 w-full h-full bg-gradient-to-br from-purple-400 to-blue-500 rounded-lg blur opacity-50 group-hover:opacity-75 transition-opacity">
+          </div>
+        </router-link>
+      </div>
     </div>
   </div>
 </template>
@@ -84,9 +88,11 @@ onMounted(() => {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -100,6 +106,7 @@ onMounted(() => {
 
 /* Scroll Indicator Animation */
 @keyframes bounce {
+
   0%,
   20%,
   50%,
@@ -107,9 +114,11 @@ onMounted(() => {
   100% {
     transform: translateY(0);
   }
+
   40% {
     transform: translateY(-20px);
   }
+
   60% {
     transform: translateY(-10px);
   }
@@ -124,9 +133,11 @@ onMounted(() => {
   0% {
     box-shadow: 0 0 0 0 rgba(236, 72, 153, 0.4);
   }
+
   70% {
     box-shadow: 0 0 0 10px rgba(236, 72, 153, 0);
   }
+
   100% {
     box-shadow: 0 0 0 0 rgba(236, 72, 153, 0);
   }

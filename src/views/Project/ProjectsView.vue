@@ -77,14 +77,6 @@
                 >
                   <i class="fas fa-shopping-cart"></i>
                 </a>
-                <div
-                  v-if="project.downloads"
-                  class="flex items-center text-gray-400 text-xs"
-                  :title="$t('projectsList.downloads')"
-                >
-                  <i class="mr-1 fas fa-download"></i>
-                  {{ project.downloads.toLocaleString() }}
-                </div>
               </div>
               <button
                 class="bg-pink-400/10 hover:bg-pink-400/20 px-3 py-1 border border-pink-400/20 rounded-md text-pink-400 text-xs transition-colors"
@@ -101,11 +93,13 @@
 </template>
 
 <script lang="ts" setup>
-import { useRouter } from 'vue-router';
-import projects from '@assets/projects.json';
+import { NavigationFailure, useRouter } from 'vue-router';
+
+import file from '@assets/projects.json';
+const projects = file as Project[];
 
 const router = useRouter();
-const goToProject = (id: number): void => router.push(`/projects/${id}`);
+const goToProject = (id: number): Promise<void | NavigationFailure | undefined> => router.push(`/projects/${id}`);
 </script>
 
 <style scoped>
