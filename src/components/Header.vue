@@ -50,7 +50,7 @@
           <router-link
             v-for="link in navLinks"
             :key="link.path"
-            :to="{ name: link.nameRoute, params: { locale: $i18n.locale } }"
+            :to="link.path"
             class="block hover:bg-gray-800/50 px-3 py-2 rounded-md font-medium text-gray-300 hover:text-white text-base transition-colors"
             active-class="text-pink-400 bg-gray-800/50"
             @click="isMobileMenuOpen = false"
