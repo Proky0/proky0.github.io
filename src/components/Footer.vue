@@ -13,7 +13,8 @@
         <div class="mb-6 md:mb-0">
           <div class="flex justify-center md:justify-start items-center space-x-2">
             <div
-              class="flex justify-center items-center bg-gradient-to-r from-pink-400 to-purple-500 rounded-md w-8 h-8 neon-logo">
+              class="flex justify-center items-center bg-gradient-to-r from-pink-400 to-purple-500 rounded-md w-8 h-8 neon-logo"
+            >
               <i class="text-white text-xs fas fa-code"></i>
             </div>
           </div>
@@ -24,16 +25,23 @@
 
         <div class="flex flex-col items-center md:items-end space-y-4">
           <div class="flex space-x-6">
-            <a v-for="(social, index) in socialLinks" :key="index" :href="social.url" target="_blank"
+            <a
+              v-for="(social, index) in socialLinks"
+              :key="index"
+              :href="social.url"
+              target="_blank"
               class="group relative text-gray-400 hover:text-pink-400 text-xl transition-colors"
-              :aria-label="$t(`social.${social.name.toLowerCase()}`)">
+              :aria-label="$t(`social.${social.name.toLowerCase()}`)"
+            >
               <i :class="social.icon"></i>
               <span class="social-tooltip">{{ $t(`social.${social.name.toLowerCase()}`) }}</span>
             </a>
           </div>
 
-          <button @click="scrollToTop"
-            class="group flex items-center mt-4 md:mt-0 text-gray-400 hover:text-pink-400 transition-colors">
+          <button
+            @click="scrollToTop"
+            class="group flex items-center mt-4 md:mt-0 text-gray-400 hover:text-pink-400 transition-colors"
+          >
             <span class="mr-2 text-sm">{{ $t('footer.backToTop') }}</span>
             <i class="text-xs transition-transform group-hover:-translate-y-1 fas fa-arrow-up"></i>
           </button>
