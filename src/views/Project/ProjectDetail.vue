@@ -1,32 +1,32 @@
 <template>
-  <div class="relative bg-gray-900/80 py-14 min-h-screen overflow-hidden">
-    <div class="fixed inset-0 opacity-10 overflow-hidden">
+  <div class="overflow-hidden relative py-14 min-h-screen bg-gray-900/80">
+    <div class="overflow-hidden fixed inset-0 opacity-10">
       <div class="absolute inset-0 grid-bg"></div>
     </div>
 
-    <div class="z-10 relative mx-auto px-4 container">
+    <div class="container relative z-10 px-4 mx-auto">
       <button
         @click="goBack"
-        class="group flex items-center gap-3 mb-12 text-pink-400 hover:text-purple-400 transition-colors"
+        class="flex gap-3 items-center mb-12 text-pink-400 transition-colors group hover:text-purple-400"
       >
-        <i class="fa-arrow-left text-xl transition-transform group-hover:-translate-x-1 fas"></i>
-        <span class="font-medium text-lg">{{ $t('projectDetails.backToProjects') }}</span>
+        <i class="text-xl transition-transform fa-arrow-left group-hover:-translate-x-1 fas"></i>
+        <span class="text-lg font-medium">{{ $t('projectDetails.backToProjects') }}</span>
       </button>
 
       <div class="mb-16 text-center">
         <h1
-          class="bg-clip-text bg-gradient-to-r from-pink-400 to-purple-400 mb-6 font-bold text-transparent text-4xl md:text-6xl"
+          class="mb-6 text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-400 md:text-6xl"
         >
           {{ project?.name || $t('projectDetails.projectNotFound') }}
         </h1>
-        <p class="mx-auto max-w-3xl text-gray-300 text-xl">
+        <p class="mx-auto max-w-3xl text-xl text-gray-300">
           {{ project?.description || $t('projectDetails.noDescription') }}
         </p>
       </div>
 
-      <div class="gap-12 grid grid-cols-1 lg:grid-cols-3">
+      <div class="grid grid-cols-1 gap-12 lg:grid-cols-3">
         <div class="space-y-12 lg:col-span-2">
-          <div v-if="project?.video" class="bg-gray-900/70 border border-pink-400/20 rounded-xl overflow-hidden">
+          <div v-if="project?.video" class="overflow-hidden rounded-xl border bg-gray-900/70 border-pink-400/20">
             <div class="aspect-h-9 aspect-w-16">
               <iframe
                 v-if="project.video.active"
@@ -36,69 +36,57 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
               ></iframe>
-              <div v-else class="flex flex-col justify-center items-center bg-gray-800/50 h-full text-pink-400">
+              <div v-else class="flex flex-col justify-center items-center h-full text-pink-400 bg-gray-800/50">
                 <i class="mb-4 text-5xl fas fa-video-slash"></i>
                 <p>{{ $t('projectDetails.videoNotAvailable') }}</p>
               </div>
             </div>
           </div>
 
-          <div v-else class="bg-gray-900/70 border border-pink-400/20 rounded-xl overflow-hidden">
+          <div v-else class="overflow-hidden rounded-xl border bg-gray-900/70 border-pink-400/20">
             <div class="aspect-h-9 aspect-w-16">
               <img
                 v-if="project?.cover"
                 :src="project?.cover"
                 :alt="project?.cover"
-                class="w-full h-full object-cover"
+                class="object-cover w-full h-full"
               />
-              <div v-else class="flex flex-col justify-center items-center bg-gray-800/50 h-full text-pink-400">
+              <div v-else class="flex flex-col justify-center items-center h-full text-pink-400 bg-gray-800/50">
                 <i class="mb-4 text-5xl fas fa-image"></i>
                 <p>{{ $t('projectDetails.photoNotAvailable') }}</p>
               </div>
             </div>
           </div>
           <div v-if="project?.images?.length" class="space-y-6">
-            <h2 class="flex items-center font-bold text-pink-400 text-2xl">
+            <h2 class="flex items-center text-2xl font-bold text-pink-400">
               <i class="mr-3 fas fa-images"></i>
               {{ $t('projectDetails.projectGallery') }}
             </h2>
-            <div class="gap-4 grid grid-cols-2 md:grid-cols-3">
+            <div class="grid grid-cols-2 gap-4 md:grid-cols-3">
               <div
                 v-for="(image, index) in project.images"
                 :key="index"
-                class="group relative cursor-pointer"
+                class="relative cursor-pointer group"
                 @click="openLightbox(image)"
               >
                 <img
                   :src="image"
                   :alt="`Screenshot ${index + 1}`"
-                  class="border border-gray-700 group-hover:border-pink-400/50 rounded-lg w-full h-40 object-cover transition-all"
+                  class="object-cover w-full h-40 rounded-lg border border-gray-700 transition-all group-hover:border-pink-400/50"
                 />
                 <div
-                  class="absolute inset-0 flex justify-center items-center bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity"
+                  class="flex absolute inset-0 justify-center items-center opacity-0 transition-opacity bg-black/30 group-hover:opacity-100"
                 >
-                  <i class="text-white text-2xl fas fa-expand"></i>
+                  <i class="text-2xl text-white fas fa-expand"></i>
                 </div>
               </div>
-            </div>
-          </div>
-
-          <div v-if="project.detail" class="bg-gray-900/70 p-6 border border-gray-700 rounded-xl">
-            <h2 class="flex items-center mb-6 font-bold text-pink-400 text-2xl">
-              <i class="mr-3 fas fa-info-circle"></i>
-              {{ $t('projectDetails.technicalDetails') }}
-            </h2>
-            <div class="prose-invert max-w-none prose">
-              <p v-for="(detail, index) in project.detail" :key="index" class="mb-4 last:mb-0">
-                {{ detail }}
-              </p>
             </div>
           </div>
         </div>
 
         <div class="space-y-8">
-          <div class="bg-gray-900/70 p-6 border border-pink-400/20 rounded-xl">
-            <h2 class="flex items-center mb-4 font-bold text-pink-400 text-xl">
+          <div class="p-6 rounded-xl border bg-gray-900/70 border-pink-400/20">
+            <h2 class="flex items-center mb-4 text-xl font-bold text-pink-400">
               <i class="mr-2 fas fa-code"></i>
               Technologies
             </h2>
@@ -106,7 +94,7 @@
               <div
                 v-for="(tech, index) in project?.technologies"
                 :key="index"
-                class="flex items-center bg-gray-800/50 px-3 py-2 border border-gray-700 rounded-lg"
+                class="flex items-center px-3 py-2 rounded-lg border border-gray-700 bg-gray-800/50"
               >
                 <i :class="tech.icon" class="mr-2 text-pink-400"></i>
                 <span>{{ tech.name }}</span>
@@ -114,11 +102,35 @@
             </div>
           </div>
 
+          <div class="p-6 rounded-xl border bg-gray-900/70 border-pink-400/20">
+            <h2 class="flex items-center mb-4 text-xl font-bold text-pink-400">
+              <i class="mr-2 fas fa-clock"></i>
+              Durée du projet
+            </h2>
+            <div class="flex items-center">
+              <i class="mr-2 text-pink-400 fas fa-calendar-alt"></i>
+              <span>{{ project?.duration }}</span>
+            </div>
+          </div>
+
+          <div class="p-6 rounded-xl border bg-gray-900/70 border-pink-400/20">
+            <h2 class="flex items-center mb-4 text-xl font-bold text-pink-400">
+              <i class="mr-2 fas fa-list-check"></i>
+              Ce que j'ai réalisé
+            </h2>
+            <ul class="space-y-3">
+              <li v-for="(activity, index) in project?.activities" :key="index" class="flex items-start">
+                <i class="mt-1 mr-3 text-sm text-pink-400 fas fa-check-circle"></i>
+                <span>{{ activity }}</span>
+              </li>
+            </ul>
+          </div>
+
           <div
             v-if="project?.github || project?.tebex"
-            class="space-y-4 bg-gray-900/70 p-6 border border-pink-400/20 rounded-xl"
+            class="p-6 space-y-4 rounded-xl border bg-gray-900/70 border-pink-400/20"
           >
-            <h2 class="flex items-center mb-2 font-bold text-pink-400 text-xl">
+            <h2 class="flex items-center mb-2 text-xl font-bold text-pink-400">
               <i class="mr-2 fas fa-external-link-alt"></i>
               {{ $t('projectDetails.links') }}
             </h2>
@@ -126,25 +138,25 @@
               v-if="project?.github"
               :href="project.github"
               target="_blank"
-              class="flex justify-between items-center bg-gray-800 hover:bg-gray-700 px-4 py-3 rounded-lg transition-colors"
+              class="flex justify-between items-center px-4 py-3 bg-gray-800 rounded-lg transition-colors hover:bg-gray-700"
             >
               <div class="flex items-center">
-                <i class="mr-3 text-gray-300 text-xl fab fa-github"></i>
+                <i class="mr-3 text-xl text-gray-300 fab fa-github"></i>
                 <span>{{ $t('projectDetails.github') }}</span>
               </div>
-              <i class="fa-chevron-right text-gray-400 fas"></i>
+              <i class="text-gray-400 fa-chevron-right fas"></i>
             </a>
             <a
               v-if="project?.tebex"
               :href="project.tebex"
               target="_blank"
-              class="flex justify-between items-center bg-gray-800 hover:bg-gray-700 px-4 py-3 rounded-lg transition-colors"
+              class="flex justify-between items-center px-4 py-3 bg-gray-800 rounded-lg transition-colors hover:bg-gray-700"
             >
               <div class="flex items-center">
-                <i class="mr-3 text-gray-300 text-xl fas fa-shopping-cart"></i>
+                <i class="mr-3 text-xl text-gray-300 fas fa-shopping-cart"></i>
                 <span>{{ $t('projectDetails.tebexStore') }}</span>
               </div>
-              <i class="fa-chevron-right text-gray-400 fas"></i>
+              <i class="text-gray-400 fa-chevron-right fas"></i>
             </a>
           </div>
         </div>
@@ -154,7 +166,7 @@
     <transition name="fade">
       <div
         v-if="lightboxImage"
-        class="z-50 fixed inset-0 flex justify-center items-center bg-black/90 p-4"
+        class="flex fixed inset-0 z-50 justify-center items-center p-4 bg-black/90"
         @click.self="closeLightbox"
       >
         <div class="relative w-full max-w-6xl">
@@ -165,21 +177,21 @@
           />
           <button
             @click="closeLightbox"
-            class="top-4 right-4 absolute flex justify-center items-center bg-black/50 hover:bg-black/70 rounded-md w-10 h-10 text-white text-xl transition-colors"
+            class="flex absolute top-4 right-4 justify-center items-center w-10 h-10 text-xl text-white rounded-md transition-colors bg-black/50 hover:bg-black/70"
           >
             <i class="fas fa-times"></i>
           </button>
           <button
             v-if="hasPreviousImage"
             @click.stop="showPreviousImage"
-            class="top-1/2 left-4 absolute flex justify-center items-center bg-black/50 hover:bg-black/70 rounded-md w-10 h-10 text-white text-xl transition-colors -translate-y-1/2"
+            class="flex absolute left-4 top-1/2 justify-center items-center w-10 h-10 text-xl text-white rounded-md transition-colors -translate-y-1/2 bg-black/50 hover:bg-black/70"
           >
             <i class="fa-chevron-left fas"></i>
           </button>
           <button
             v-if="hasNextImage"
             @click.stop="showNextImage"
-            class="top-1/2 right-4 absolute flex justify-center items-center bg-black/50 hover:bg-black/70 rounded-md w-10 h-10 text-white text-xl transition-colors -translate-y-1/2"
+            class="flex absolute right-4 top-1/2 justify-center items-center w-10 h-10 text-xl text-white rounded-md transition-colors -translate-y-1/2 bg-black/50 hover:bg-black/70"
           >
             <i class="fa-chevron-right fas"></i>
           </button>
@@ -192,6 +204,7 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
 import { useRouter, useRoute } from 'vue-router';
+
 import file from '@assets/projects.json';
 
 const projects = file as Project[];
