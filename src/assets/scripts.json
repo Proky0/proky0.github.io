@@ -28,9 +28,7 @@
       }
     ],
     "year": 2022,
-    "compatibility": [
-      "altica"
-    ]
+    "compatibility": ["altica"]
   },
   {
     "id": "lucky-wheel",
@@ -57,9 +55,7 @@
       }
     ],
     "year": 2022,
-    "compatibility": [
-      "altica"
-    ]
+    "compatibility": ["altica"]
   },
   {
     "id": "inventory-drop",
@@ -87,9 +83,7 @@
       }
     ],
     "year": 2022,
-    "compatibility": [
-      "altica"
-    ]
+    "compatibility": ["altica"]
   },
   {
     "id": "inventory-manager",
@@ -120,9 +114,7 @@
       }
     ],
     "year": 2022,
-    "compatibility": [
-      "altica"
-    ]
+    "compatibility": ["altica"]
   },
   {
     "id": "property-creator",
@@ -150,9 +142,7 @@
       }
     ],
     "year": 2022,
-    "compatibility": [
-      "altica"
-    ]
+    "compatibility": ["altica"]
   },
   {
     "id": "card",
@@ -183,9 +173,7 @@
       }
     ],
     "year": 2022,
-    "compatibility": [
-      "altica"
-    ]
+    "compatibility": ["altica"]
   },
   {
     "id": "coma",
@@ -218,9 +206,7 @@
       }
     ],
     "year": 2022,
-    "compatibility": [
-      "altica"
-    ]
+    "compatibility": ["altica"]
   },
   {
     "id": "dui",
@@ -247,9 +233,7 @@
       }
     ],
     "year": 2022,
-    "compatibility": [
-      "altica"
-    ]
+    "compatibility": ["altica"]
   },
   {
     "id": "election",
@@ -279,9 +263,7 @@
       }
     ],
     "year": 2022,
-    "compatibility": [
-      "altica"
-    ]
+    "compatibility": ["altica"]
   },
   {
     "id": "invoice",
@@ -313,9 +295,7 @@
       }
     ],
     "year": 2022,
-    "compatibility": [
-      "altica"
-    ]
+    "compatibility": ["altica"]
   },
   {
     "id": "racing",
@@ -347,9 +327,7 @@
       }
     ],
     "year": 2022,
-    "compatibility": [
-      "altica"
-    ]
+    "compatibility": ["altica"]
   },
   {
     "id": "racing-editor",
@@ -381,9 +359,7 @@
       }
     ],
     "year": 2022,
-    "compatibility": [
-      "altica"
-    ]
+    "compatibility": ["altica"]
   },
   {
     "id": "radio",
@@ -414,9 +390,7 @@
       }
     ],
     "year": 2022,
-    "compatibility": [
-      "altica"
-    ]
+    "compatibility": ["altica"]
   },
   {
     "id": "casino",
@@ -444,9 +418,7 @@
       }
     ],
     "year": 2022,
-    "compatibility": [
-      "altica"
-    ]
+    "compatibility": ["altica"]
   },
   {
     "id": "i18n",
@@ -472,9 +444,7 @@
       }
     ],
     "year": 2022,
-    "compatibility": [
-      "altica"
-    ]
+    "compatibility": ["altica"]
   },
   {
     "id": "property",
@@ -503,9 +473,7 @@
       }
     ],
     "year": 2022,
-    "compatibility": [
-      "altica"
-    ]
+    "compatibility": ["altica"]
   },
   {
     "id": "server-queue",
@@ -532,9 +500,7 @@
       }
     ],
     "year": 2022,
-    "compatibility": [
-      "altica"
-    ]
+    "compatibility": ["altica"]
   },
   {
     "id": "radio-car",
@@ -542,9 +508,7 @@
     "type": "fivem-script",
     "category": "Vehicule",
     "description": "Permet aux joueurs d'écouter des stations de radio personnalisées directement dans les véhicules.",
-    "features": [
-      "Ajout de stations de radio personnalisées"
-    ],
+    "features": ["Ajout de stations de radio personnalisées"],
     "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Radio+Car&fontsize=70",
     "video": "",
     "technologies": [
@@ -558,9 +522,7 @@
       }
     ],
     "year": 2022,
-    "compatibility": [
-      "altica"
-    ]
+    "compatibility": ["altica"]
   },
   {
     "id": "vehicle-foodtruck",
@@ -587,9 +549,7 @@
       }
     ],
     "year": 2022,
-    "compatibility": [
-      "altica"
-    ]
+    "compatibility": ["altica"]
   },
   {
     "id": "golf",
@@ -616,9 +576,7 @@
       }
     ],
     "year": 2022,
-    "compatibility": [
-      "altica"
-    ]
+    "compatibility": ["altica"]
   },
   {
     "id": "paintball",
@@ -651,9 +609,7 @@
       }
     ],
     "year": 2022,
-    "compatibility": [
-      "altica"
-    ]
+    "compatibility": ["altica"]
   },
   {
     "id": "water-bombe",
@@ -679,9 +635,7 @@
       }
     ],
     "year": 2024,
-    "compatibility": [
-      "standalone"
-    ]
+    "compatibility": ["standalone"]
   },
   {
     "id": "flatbed",
@@ -708,9 +662,7 @@
       }
     ],
     "year": 2024,
-    "compatibility": [
-      "standalone"
-    ]
+    "compatibility": ["standalone"]
   },
   {
     "id": "fire",
@@ -738,40 +690,6 @@
       }
     ],
     "year": 2024,
-    "compatibility": [
-      "standalone"
-    ]
-  },
-  {
-    "id": "radio",
-    "name": "Radio Portatible",
-    "type": "fivem-script",
-    "category": "Interfaces",
-    "description": "Système avancé de gestion des incendies, permettant de déclencher des feux, de les voir se propager de manière réaliste et de les éteindre avec l'équipement approprié.",
-    "features": [
-      "Crée une radio portative pour les joueurs qui peuvent poser",
-      "Sync entre les joueurs pour entendre la radio",
-      "Possibilité de changer de station de la radio"
-    ],
-    "preview": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Radio+Portatible&fontsize=70",
-    "video": "",
-    "technologies": [
-      {
-        "name": "Lua",
-        "icon": "fas fa-code"
-      },
-      {
-        "name": "Svelte",
-        "icon": "fas fa-code"
-      },
-      {
-        "name": "FiveM Natives",
-        "icon": "fas fa-cloud"
-      }
-    ],
-    "year": 2024,
-    "compatibility": [
-      "standalone"
-    ]
+    "compatibility": ["standalone"]
   }
 ]
