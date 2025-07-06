@@ -2,9 +2,16 @@
   {
     "id": 1,
     "name": "LS City",
+    "label": "ls_city",
+    "duration": "3 / 4 Mois",
     "description": "Un serveur de jeu de rôle dans Los Santos. Explorez la ville, interagissez avec d'autres joueurs et vivez des aventures uniques.",
     "cover": "https://place-hold.it/800x450/0d0d0d/ffffff?text=LS+City&fontsize=70",
     "images": [],
+    "activities": [
+      "Modification du système d'appel d'urgence",
+      "Personnalisation de l'interface du GCPhone",
+      "Personnalisation des véhicules (liveries)"
+    ],
     "technologies": [
       {
         "name": "Lua",
@@ -19,6 +26,13 @@
   {
     "id": 2,
     "name": "Infinite RP",
+    "label": "infinite_rp",
+    "duration": "4 Mois",
+    "activities": [
+      "Développement d'une base serveur sous ESX",
+      "Implémentation d'un système d'interaction avec les portes des bâtiments",
+      "Création d'un système de répondeur d'urgence pour le GCPhone"
+    ],
     "description": "Un serveur de jeu de rôle dans Los Santos. Explorez la ville, interagissez avec d'autres joueurs et vivez des aventures uniques.",
     "cover": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Infinite+RP&fontsize=70",
     "images": [],
@@ -36,6 +50,9 @@
   {
     "id": 3,
     "name": "Fever RP",
+    "label": "fever_rp",
+    "activities": ["Développement d'un jeu de paintball"],
+    "duration": "1 Mois",
     "description": "Un serveur de jeu de rôle dans Los Santos. Explorez la ville, interagissez avec d'autres joueurs et vivez des aventures uniques.",
     "cover": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Fever+RP&fontsize=70",
     "images": [],
@@ -57,6 +74,9 @@
   {
     "id": 4,
     "name": "Destiny V",
+    "label": "destiny_v",
+    "activities": ["Développement d'une base serveur sous ESX", "Création de plusieurs scripts personnalisés"],
+    "duration": "1 Mois",
     "description": "Un serveur de jeu de rôle dans Los Santos. Explorez la ville, interagissez avec d'autres joueurs et vivez des aventures uniques.",
     "cover": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Destiny+V&fontsize=70",
     "images": [],
@@ -76,8 +96,11 @@
     ]
   },
   {
-    "id": 7,
+    "id": 5,
     "name": "LS Confidential",
+    "label": "ls_confidential",
+    "duration": "~1 Ans",
+    "activities": ["Développement d'une base serveur from scratch", "Création de plusieurs scripts personnalisés"],
     "description": "Un serveur de jeu de rôle dans Los Santos. Explorez la ville, interagissez avec d'autres joueurs et vivez des aventures uniques.",
     "cover": "https://place-hold.it/800x450/0d0d0d/ffffff?text=LS+Confidential&fontsize=70",
     "images": [],
@@ -99,6 +122,14 @@
   {
     "id": 6,
     "name": "Altica RP",
+    "label": "altica_rp",
+    "duration": "2 Ans",
+    "activities": [
+      "Développement d'une base serveur from scratch",
+      "Gestion et administration du serveur",
+      "Implémentation d'interfaces utilisateur in-game",
+      "Développement de multiples scripts personnalisés"
+    ],
     "description": "Un serveur de jeu de rôle dans Los Santos. Explorez la ville, interagissez avec d'autres joueurs et vivez des aventures uniques.",
     "cover": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Altica+RP&fontsize=70",
     "images": [],
@@ -128,6 +159,9 @@
   {
     "id": 7,
     "name": "CaliRP",
+    "label": "cali_rp",
+    "duration": "2 / 3 Mois",
+    "activities": ["Refactorisation de scripts pour optimisation", "Développement d'un launcher from scratch"],
     "description": "Un serveur de jeu de rôle dans Los Santos. Explorez la ville, interagissez avec d'autres joueurs et vivez des aventures uniques.",
     "cover": "https://place-hold.it/800x450/0d0d0d/ffffff?text=CaliRP&fontsize=70",
     "images": [],
@@ -141,6 +175,13 @@
   {
     "id": 8,
     "name": "21 JumpClick",
+    "label": "21_jumpclick",
+    "activities": [
+      "Développement d'un script de boombox from scratch",
+      "Création d'un système de waterbombe pour les pompiers",
+      "Développement d'un système de contrôle pour bras articulé de camion"
+    ],
+    "duration": "1 / 2 Mois",
     "description": "Un serveur de jeu de rôle dans Los Santos. Explorez la ville, interagissez avec d'autres joueurs et vivez des aventures uniques.",
     "cover": "https://place-hold.it/800x450/0d0d0d/ffffff?text=21+JumpClick&fontsize=70",
     "images": [],
@@ -174,6 +215,13 @@
   {
     "id": 9,
     "name": "Open Space",
+    "label": "open_space",
+    "activities": [
+      "Optimisation et modification de scripts existants",
+      "Conception d'un HUD (Vue3, Tailwind CSS, Pinia)",
+      "Intégration du HUD dans le jeu"
+    ],
+    "duration": "1 Mois",
     "description": "Un jeu de rôle inspiré de 'The Office' avec une touche mortelle : un tueur se cache parmi les employés de bureau. Survivez à votre journée de travail tout en démasquant le meurtrier.",
     "cover": "https://place-hold.it/800x450/0d0d0d/ffffff?text=Open+Space&fontsize=70",
     "images": [],
