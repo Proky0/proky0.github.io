@@ -10,7 +10,8 @@
     <div class="z-10 relative flex flex-col justify-center items-center px-4 py-20 min-h-screen text-center">
       <h1 class="mb-6 font-bold text-5xl md:text-7xl tracking-tight">
         <span
-          class="bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 text-transparent animate-gradient">
+          class="bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 text-transparent animate-gradient"
+        >
           {{ $t('hero.title') }}
         </span>
       </h1>
@@ -25,20 +26,24 @@
       </div>
 
       <div class="flex gap-6 justify-center">
-        <router-link to="/projects"
-          class="group relative px-8 py-3 rounded-lg font-medium text-white bg-gradient-to-br from-pink-500 to-purple-600 hover:scale-105 transition-all duration-200">
+        <router-link
+          to="/projects"
+          class="group relative px-8 py-3 rounded-lg font-medium text-white bg-gradient-to-br from-pink-500 to-purple-600 hover:scale-105 transition-all duration-200"
+        >
           <span class="relative z-10">{{ $t('hero.cta') }}</span>
           <div
-            class="absolute inset-0 w-full h-full bg-gradient-to-br from-pink-400 to-purple-500 rounded-lg blur opacity-50 group-hover:opacity-75 transition-opacity">
-          </div>
+            class="absolute inset-0 w-full h-full bg-gradient-to-br from-pink-400 to-purple-500 rounded-lg blur opacity-50 group-hover:opacity-75 transition-opacity"
+          ></div>
         </router-link>
 
-        <router-link to="/about"
-          class="group relative px-8 py-3 rounded-lg font-medium text-white bg-gradient-to-br from-purple-500 to-blue-600 hover:scale-105 transition-all duration-200">
+        <router-link
+          to="/about"
+          class="group relative px-8 py-3 rounded-lg font-medium text-white bg-gradient-to-br from-purple-500 to-blue-600 hover:scale-105 transition-all duration-200"
+        >
           <span class="relative z-10">{{ $t('hero.aboutMe') }}</span>
           <div
-            class="absolute inset-0 w-full h-full bg-gradient-to-br from-purple-400 to-blue-500 rounded-lg blur opacity-50 group-hover:opacity-75 transition-opacity">
-          </div>
+            class="absolute inset-0 w-full h-full bg-gradient-to-br from-purple-400 to-blue-500 rounded-lg blur opacity-50 group-hover:opacity-75 transition-opacity"
+          ></div>
         </router-link>
       </div>
     </div>
@@ -106,7 +111,6 @@ onMounted(() => {
 
 /* Scroll Indicator Animation */
 @keyframes bounce {
-
   0%,
   20%,
   50%,

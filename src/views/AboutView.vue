@@ -4,14 +4,18 @@
       <!-- Section profil -->
       <div class="flex flex-col items-center mb-16">
         <div class="relative mb-8 w-52 h-52">
-          <img :src="ProfileImage" alt="Photo de profil"
-            class="object-cover w-full h-full rounded-full border-4 shadow-2xl transition-all duration-500 ease-out border-purple-500/30 hover:scale-105" />
+          <img
+            :src="ProfileImage"
+            alt="Photo de profil"
+            class="object-cover w-full h-full rounded-full border-4 shadow-2xl transition-all duration-500 ease-out border-purple-500/30 hover:scale-105"
+          />
           <div
-            class="absolute -right-2 -bottom-2 w-6 h-6 bg-emerald-500 rounded-full border-4 border-gray-900 shadow-lg animate-pulse">
-          </div>
+            class="absolute -right-2 -bottom-2 w-6 h-6 bg-emerald-500 rounded-full border-4 border-gray-900 shadow-lg animate-pulse"
+          ></div>
         </div>
         <h1 class="mb-4 text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
-          Mon Expérience</h1>
+          Mon Expérience
+        </h1>
         <p class="text-xl font-light text-gray-300">Développeur & Administrateur Système</p>
       </div>
 
@@ -24,11 +28,10 @@
           Depuis 2018, je me suis immergé dans l'univers des plateformes de modification pour Grand Theft Auto V,
           notamment FiveM, AltV et RageMP. Au fil des années, j'ai développé une expertise solide avec plus de
           <span class="px-3 py-1 font-semibold text-purple-300 rounded-full bg-purple-500/10">11 197 heures</span> de
-          jeu,
-          ce qui représente une expérience considérable dans le domaine. J'ai eu l'occasion de collaborer bénévolement
-          avec plus de
-          9 serveurs différents, occupant des rôles clés en tant que développeur et administrateur système. Tout ce
-          travail a été réalisé sur la base du volontariat, reflétant ma passion et mon engagement pour ce domaine.
+          jeu, ce qui représente une expérience considérable dans le domaine. J'ai eu l'occasion de collaborer
+          bénévolement avec plus de 9 serveurs différents, occupant des rôles clés en tant que développeur et
+          administrateur système. Tout ce travail a été réalisé sur la base du volontariat, reflétant ma passion et mon
+          engagement pour ce domaine.
         </p>
       </div>
 
@@ -38,17 +41,21 @@
             <span class="mr-4 text-2xl">🎮</span> Expérience
           </h3>
           <ul class="space-y-4 text-lg text-gray-200">
-            <li class="flex items-center"><span class="mr-3 w-2 h-2 bg-purple-400 rounded-full"></span>Plus de 9
-              serveurs rejoints</li>
-            <li class="flex items-center"><span class="mr-3 w-2 h-2 bg-purple-400 rounded-full"></span>Plus de 11 197
-              heures de jeu</li>
-            <li class="flex items-center"><span class="mr-3 w-2 h-2 bg-purple-400 rounded-full"></span>Rôles principaux
-              :
+            <li class="flex items-center">
+              <span class="mr-3 w-2 h-2 bg-purple-400 rounded-full"></span>Plus de 9 serveurs rejoints
+            </li>
+            <li class="flex items-center">
+              <span class="mr-3 w-2 h-2 bg-purple-400 rounded-full"></span>Plus de 11 197 heures de jeu
+            </li>
+            <li class="flex items-center">
+              <span class="mr-3 w-2 h-2 bg-purple-400 rounded-full"></span>Rôles principaux :
               <ul class="mt-3 ml-8 space-y-2 text-gray-300">
-                <li class="flex items-center"><span class="mr-3 w-1.5 h-1.5 bg-pink-400 rounded-full"></span>Développeur
-                  de scripts</li>
-                <li class="flex items-center"><span
-                    class="mr-3 w-1.5 h-1.5 bg-pink-400 rounded-full"></span>Administrateur système</li>
+                <li class="flex items-center">
+                  <span class="mr-3 w-1.5 h-1.5 bg-pink-400 rounded-full"></span>Développeur de scripts
+                </li>
+                <li class="flex items-center">
+                  <span class="mr-3 w-1.5 h-1.5 bg-pink-400 rounded-full"></span>Administrateur système
+                </li>
               </ul>
             </li>
           </ul>
@@ -64,11 +71,14 @@
               <div>
                 Développement de scripts
                 <ul class="mt-3 ml-5 space-y-2 text-gray-300">
-                  <li class="flex items-center"><span
-                      class="mr-3 w-1.5 h-1.5 bg-pink-400 rounded-full"></span>Front-end: Vue3, Tailwind CSS, Svelte,
-                    Sass, TypeScript, React</li>
-                  <li class="flex items-center"><span class="mr-3 w-1.5 h-1.5 bg-pink-400 rounded-full"></span>Back-end:
-                    LUA (principalement), MySQL / MariaDB</li>
+                  <li class="flex items-center">
+                    <span class="mr-3 w-1.5 h-1.5 bg-pink-400 rounded-full"></span>Front-end: Vue3, Tailwind CSS,
+                    Svelte, Sass, TypeScript, React
+                  </li>
+                  <li class="flex items-center">
+                    <span class="mr-3 w-1.5 h-1.5 bg-pink-400 rounded-full"></span>Back-end: LUA (principalement), MySQL
+                    / MariaDB
+                  </li>
                 </ul>
               </div>
             </li>
@@ -77,12 +87,15 @@
               <div>
                 Administration serveur
                 <ul class="mt-3 ml-5 space-y-2 text-gray-300">
-                  <li class="flex items-center"><span
-                      class="mr-3 w-1.5 h-1.5 bg-pink-400 rounded-full"></span>Configuration serveur</li>
-                  <li class="flex items-center"><span class="mr-3 w-1.5 h-1.5 bg-pink-400 rounded-full"></span>Gestion
-                    des ressources</li>
-                  <li class="flex items-center"><span
-                      class="mr-3 w-1.5 h-1.5 bg-pink-400 rounded-full"></span>Optimisation des performances</li>
+                  <li class="flex items-center">
+                    <span class="mr-3 w-1.5 h-1.5 bg-pink-400 rounded-full"></span>Configuration serveur
+                  </li>
+                  <li class="flex items-center">
+                    <span class="mr-3 w-1.5 h-1.5 bg-pink-400 rounded-full"></span>Gestion des ressources
+                  </li>
+                  <li class="flex items-center">
+                    <span class="mr-3 w-1.5 h-1.5 bg-pink-400 rounded-full"></span>Optimisation des performances
+                  </li>
                 </ul>
               </div>
             </li>
